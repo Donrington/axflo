@@ -292,7 +292,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 5%;
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('oilandgas.jpg')no-repeat center fixed;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('oilandgas.jpg')no-repeat center fixed;
             background-size: cover;
             position: relative;
         }
@@ -2018,8 +2018,8 @@ About Section
         font-size: 1rem;
     }
     .logo-item {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
     .logos-slider {
         gap: 60px;
@@ -2034,8 +2034,8 @@ About Section
         font-size: 0.9rem;
     }
     .logo-item {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
     }
     .logos-slider {
         gap: 40px;
