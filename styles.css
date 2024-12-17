@@ -292,7 +292,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 5%;
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('oilandgas.jpg') no-repeat center center;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('oilandgas.jpg')no-repeat center fixed;
             background-size: cover;
             position: relative;
         }
@@ -400,7 +400,7 @@
         .highlight-card .card {
             padding: 20px;
             border-radius: 10px;
-            width: 300px;
+            width: 550px;
             color: #fff;
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
@@ -455,6 +455,7 @@
             }
             .cta-button {
                 align-self: center;
+                display: none;
             }
             .highlight-card {
                 flex-direction: row; /* Keep cards side by side */
@@ -611,7 +612,7 @@ About Section
     }
 
     .text-content h2{
-        font-size: 2.5rem;
+        font-size: 2.0rem;
         text-align: center;
     }
     .content-section {
@@ -1207,11 +1208,14 @@ About Section
 
             .news-header h2 {
                 text-align: center;
+                font-size: 2.0rem;
+
                 
             }
 
             .news-content {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr ;
+               
             }
 
             .main-news, .news-list {
@@ -1230,7 +1234,7 @@ About Section
 
         @media (max-width: 480px) {
             .news-header h2 {
-                font-size: 2.5rem;
+                font-size: 2.0rem;
             }
 
             .news-header a {
@@ -1776,7 +1780,7 @@ About Section
         /* Responsive Design */
         @media (max-width: 768px) {
             .services-header h2 {
-                font-size: 2.5rem;
+                font-size: 2.0rem;
                 text-align: center;
             }
 
@@ -2008,14 +2012,14 @@ About Section
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .trusted-title {
-        font-size: 2.5rem;
+        font-size: 2.0rem;
     }
     .trusted-subtitle {
         font-size: 1rem;
     }
     .logo-item {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
     .logos-slider {
         gap: 60px;
@@ -2266,9 +2270,10 @@ About Section
         text-align: center;
     }
 
+    
 
     .location h3, .management h3 {
-        text-align: center;
+        text-align: center !important;
     }
     .manager p {
         text-align: center;
@@ -2290,10 +2295,11 @@ About Section
 @media (max-width: 768px) {
     .contact-section {
         padding: 5% 3%;
+      
     }
 
     .contact-info h2 {
-        font-size: 2.5rem;
+        font-size: 2.0rem;
     }
 
     .footer_display{
@@ -2302,11 +2308,20 @@ About Section
     .contact-info h3 {
         font-size: 1.5rem;
     }
-
+    .manage h3{
+        text-align: center !important;
+        justify-content: center !important;
+        align-items: center !important;
+      
+    }
     .manager {
         padding-left: 0;
     }
 
+   
+    .location h3, .management h3 {
+        text-align: center !important;
+    }
     .map-marker {
         width: 25px;
         height: 25px;
@@ -2320,7 +2335,7 @@ About Section
 
 
 .footer-section {
-    background: linear-gradient( var(--primary-gradient), var(--secondary-gradient)), url('company2.jpg') no-repeat center fixed;
+    background: linear-gradient( var(--primary-gradient), var(--secondary-gradient)), url('semi-submersible-oil-rig-vessel.jpg') no-repeat center fixed;
     background-size: cover;
     color: #fff;
     padding: 4rem 2rem;
