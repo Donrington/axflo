@@ -400,7 +400,7 @@
         .highlight-card .card {
             padding: 20px;
             border-radius: 10px;
-            width: 550px;
+            width: 30vw;
             color: #fff;
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
