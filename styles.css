@@ -1183,6 +1183,16 @@ About Section
     line-height: 1.6;
     transition: color 0.3s ease;
 }
+.job {
+    text-align: center;
+}
+.job-postings p{
+    color: #000000d1;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
 
 .job-posting:hover p {
     color: #333; /* Slightly darker on hover */
@@ -1677,6 +1687,10 @@ About Section
         font-size: 0.9rem;
     }
 
+    .job-postings p{
+        font-size: 0.9rem;
+    }
+
     .job-posting a {
         padding: 0.4rem 0.8rem;
         font-size: 0.9rem;
@@ -1698,7 +1712,7 @@ About Section
 
 @media (max-width: 480px) {
     .job-postings h2 {
-        font-size: 1.85rem;
+        font-size: 1.75rem;
     }
 
     .job-posting h3 {
@@ -1708,6 +1722,11 @@ About Section
     .job-posting p {
         font-size: 0.8rem;
     }
+
+    .job-postings p{
+        font-size: 0.8rem;
+    }
+    
 }
 
 
