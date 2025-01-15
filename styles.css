@@ -1684,7 +1684,7 @@ About Section
 
     /* Adjust background circles for smaller screens */
     .background-circles .circle {
-        display: none; /* Hide decorative circles on small screens */
+        /* Hide decorative circles on small screens */
     }
 }
 
