@@ -675,6 +675,10 @@ About Section
     .image-content img {
         max-width: 90%;
     }
+    .buttons2{
+        text-align: center;
+        justify-content: center;
+    }
     .buttons{
         text-align: center;
         justify-content: center;
@@ -1391,6 +1395,7 @@ About Section
 
     .job-postings {
         padding: 2rem 1rem;
+        width: 90%;
     }
 
     .news-list {
@@ -1653,7 +1658,7 @@ About Section
     }
 
     .job-postings h2 {
-        font-size: 2.5rem;
+        font-size: 2.0rem;
     }
 
     .job-list {
@@ -1685,7 +1690,7 @@ About Section
 
 @media (max-width: 480px) {
     .job-postings h2 {
-        font-size: 2rem;
+        font-size: 1.85rem;
     }
 
     .job-posting h3 {
@@ -1939,7 +1944,7 @@ About Section
         @media (max-width: 768px) {
             .values-header h2 {
                 font-size: 2.5rem;
-                text-align: center;
+                text-align: center !important;
             }
 
             .value-card {
@@ -1953,12 +1958,17 @@ About Section
             .values-section {
                 padding: 3% 5%;
             }
+
+            .values-header {
+                font-size: 2.5rem;
+                text-align: center !important;
+            }
         }
 
         @media (max-width: 480px) {
             .values-header h2 {
                 font-size: 2rem;
-            text-align: center;
+                text-align: center !important;
             }
 
             .value-card {
@@ -1971,6 +1981,11 @@ About Section
 
             .values-section {
                 padding: 2% 3%;
+            }
+
+            .values-header {
+                font-size: 2.5rem;
+                text-align: center !important;
             }
         }
     
@@ -2253,6 +2268,12 @@ About Section
             .service-card img {
                 height: 150px;
             }
+
+            .services-header {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+
         }
 
         @media (max-width: 480px) {
