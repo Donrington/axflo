@@ -3335,6 +3335,7 @@ About Section
 @media (max-width: 768px) {
     .contact-section {
         padding: 5% 3%;
+        display: none;
       
     }
 
