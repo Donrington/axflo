@@ -182,6 +182,11 @@
         </div>
     </section>
     
+
+
+
+
+
     
     <div style="overflow: hidden; margin-bottom:-4px;">
         <svg
@@ -304,6 +309,14 @@
         </div>
     </div>
 </section>
+
+
+
+
+
+
+
+
 <!-- Values Section -->
 <section class="values-section">
     <div data-aos="fade-up">
@@ -568,7 +581,79 @@
     </div>
 </section>
 
+<section class="certifications-section" id="certifications" data-aos="fade-up">
+    <!-- Curved Divider (Desktop Only) -->
+    <div style="overflow: hidden;">
+        <svg
+            preserveAspectRatio="none"
+            viewBox="0 0 1200 120"
+            xmlns="http://www.w3.org/2000/svg"
+            class="certsvg"
+            style="
+                fill: #201f1f;
+                width: 136%;
+                height: 90px;
+                transform: rotate(180deg);
+                margin-bottom: -4px;
+            "
+        >
+            <path
+                d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z"
+            />
+        </svg>
+    </div>
 
+    <!-- Left Side: Title & Content -->
+    <div class="certifications-content">
+        <h2>
+            Industry <br />
+            <span>Certifications</span>
+        </h2>
+        <p>
+            At Axflo Oil & Gas Nig Ltd, our commitment to excellence is reflected in
+            the global certifications we have achieved. These certifications ensure
+            that we adhere to the highest standards of quality and environmental
+            management in all our operations.
+        </p>
+        <div class="learn-more-btn">
+            <a href="#">Learn More →</a>
+        </div>
+    </div>
+
+    <!-- Right Side: Scrollable Certifications List -->
+    <div class="certifications-list" data-aos="fade-up">
+        <div class="fade-effect top"></div>
+        <div class="list-container" id="certificationsContainer">
+            <div class="certification-item">
+                <span>ISO 9001:2015 (Quality Management System)</span>
+                <a href="certificates/ISO9001.pdf" download target="_blank">
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                    </button>
+                </a>
+            </div>
+            <div class="certification-item">
+                <span>ISO 14001:2015 (Environmental Management System)</span>
+                <a href="certificates/ISO14001.pdf" download target="_blank">
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                    </button>
+                </a>
+            </div>
+            <div class="certification-item">
+                <span>ISO 10001:2015 (Waste Management System)</span>
+                <a href="certificates/ISO10001_2015_Waste_Management.pdf" download target="_blank">
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+        <div class="fade-effect bottom"></div>
+    </div>
+</section>
 
 
 <section class="trusted-section" id="clients">
@@ -606,7 +691,7 @@
                 <img src="partners/indorama3.png" alt="Chevron" class="logo-img">
             </div>
             <div class="logo-item">
-                <img src="partners/samdus_white.png" alt="Samdus" class="logo-img">
+                <img src="partners/samdus_trans.png" alt="Samdus" class="logo-img">
             </div>
             <div class="logo-item">
                 <img src="partners/mobil-logo-png-transparent.png" alt="Mobil" class="logo-img">
@@ -620,8 +705,13 @@
                 <img src="partners/shell-logo-png-transparent.png" alt="Shell" class="logo-img">
             </div>
             <div class="logo-item">
-                <img src="partners/total-3-logo-png-transparent.png" alt="Total energies" class="logo-img">
+                <img src="partners/TotalEnergies_logo.svg.webp" alt="Total energies" class="logo-img">
             </div>
+
+            <div class="logo-item">
+                <img src="partners/desmi1.png" alt="DESMI" class="logo-img">
+            </div>
+
             <!-- Duplicate logos for seamless infinite scroll -->
             <div class="logo-item">
                 <img src="partners/addax-1.png" alt="Addax Petroleum" class="logo-img">
@@ -650,7 +740,11 @@
                 <img src="partners/shell-logo-png-transparent.png" alt="Shell" class="logo-img">
             </div>
             <div class="logo-item">
-                <img src="partners/total-3-logo-png-transparent.png" alt="Total energies" class="logo-img">
+                <img src="partners/TotalEnergies_logo.svg.webp" alt="Total energies" class="logo-img">
+            </div>
+
+            <div class="logo-item">
+                <img src="partners/desmi1.png" alt="DESMI" class="logo-img">
             </div>
         </div>
     </div>
@@ -746,6 +840,10 @@
         </svg>
     </button>
 </div>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0-beta3/js/all.min.js"
+
+></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
 
@@ -865,7 +963,40 @@ function toggleNav() {
     });
 });
 
+(function() {
+    const container = document.getElementById('certificationsContainer');
+    // Clone items for infinite scroll
+    const cloneItems = () => {
+      const items = [...container.children];
+      items.forEach((item) => {
+          const clone = item.cloneNode(true);
+          container.appendChild(clone);
+      });
+    };
 
+    cloneItems(); // Duplicate once
+
+    let scrollSpeed = 0.3; // px per frame (adjust as needed)
+    let scrollPos = 0;
+
+    function animateScroll() {
+      scrollPos += scrollSpeed;
+      container.scrollTop = scrollPos;
+
+      // singleSetHeight: height of original item set
+      const singleSetHeight =
+        container.children[0].offsetHeight *
+        (container.children.length / 2);
+
+      if (scrollPos >= singleSetHeight) {
+        scrollPos = 0;
+        container.scrollTop = 0;
+      }
+      requestAnimationFrame(animateScroll);
+    }
+
+    requestAnimationFrame(animateScroll);
+  })();
 
 // Example JavaScript for smooth scrolling
 document.querySelectorAll('.footer-links a').forEach(anchor => {
@@ -890,6 +1021,9 @@ window.addEventListener('scroll', () => {
         backToTop.style.display = 'none';
     }
 });
+
+
+
 
     </script>
 </body>
