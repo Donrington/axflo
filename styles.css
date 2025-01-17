@@ -1016,6 +1016,10 @@ About Section
         font-size: 2rem;
     }
 
+    .certification-item span{
+        font-size: 1.1rem;
+    }
+
     .certifications-content p {
         font-size: 1rem;
     }
@@ -1039,6 +1043,9 @@ About Section
         font-size: 0.9rem;
     }
 
+    .certification-item span{
+        font-size: 0.9rem;
+    }
     .certifications-content .learn-more-btn {
         font-size: 0.85rem;
         padding: 0.5rem 1rem;
