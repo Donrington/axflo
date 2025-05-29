@@ -23,7 +23,8 @@
         <link rel="apple-touch-icon" href="https://www.axfloo.com/axflo.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+   
+         <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Epilogue:ital,wght@0,100..900;1,100&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rosario:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
         <script type="application/ld+json">
             {
@@ -45,16 +46,16 @@
                 ]
             }
         </script>
-        <title>Axflo Oil & Gas - Innovating Energy Solutions</title>
+        <title>Axflo Oil & Gas Nig Ltd - Innovating Energy Solutions</title>
     </head>
     
 <body>
 
     
-    <header class="header">
+  <header class="header">
         <nav class="nav">
-            <div class="nav__brand" data-aos="fade-right">
-                <img src="axflo.png" alt="Axflo logo">
+            <div class="nav__brand">
+                <img src="logo/AOGLogoWhite2.png" alt="Axflo logo">
             </div>
             <ul class="nav__links">
                 <li><a href="#">Home</a></li>
@@ -70,257 +71,178 @@
                 <a href="tel:+123456789">Call Us</a>
             </div>
         </nav>
-        <!-- Toggle button outside of nav -->
-        <div class="toggle-btn" onclick="toggleNav()" aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
     </header>
 
-    <!-- Overlay for Mobile Navigation -->
+        <!-- Mobile Toggle Button -->
+    <div class="toggle-btn" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Mobile Slide Modal -->
+    <div class="mobile-nav">
+        <div class="mobile-nav__header">
+            <img src="logo/AOGLogoWhite2.png" alt="Axflo logo">
+        </div>
+        <ul class="mobile-nav__links">
+            <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#about"><i class="fas fa-users"></i>About Us</a></li>
+            <li><a href="#news"><i class="fas fa-newspaper"></i>News</a></li>
+            <li><a href="#careers"><i class="fas fa-briefcase"></i>Careers</a></li>
+            <li><a href="#achievements"><i class="fas fa-trophy"></i>Achievements</a></li>
+            <li><a href="#services"><i class="fas fa-cogs"></i>Services</a></li>
+            <li><a href="#certifications"><i class="fas fa-certificate"></i>Certifications</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+        </ul>
+        <div class="mobile-nav__action">
+            <a href="tel:+123456789">
+                <i class="fas fa-phone"></i>
+                Call Us Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Overlay -->
     <div class="overlay" onclick="toggleNav()"></div>
+
     
-    <section class="hero-section">
-        <div class="hero-content" data-aos="fade-up">
+ <section class="hero-section">
+        <!-- Geometric accents -->
+        <div class="geometric-accent circle-1"></div>
+        <div class="geometric-accent square-1"></div>
+        
+        <div class="hero-content">
             <h1 class="hero-title">
-                <span>H</span><span>a</span><span>r</span><span>n</span><span>e</span><span>s</span><span>s</span> <br>
-                <span>E</span><span>n</span><span>e</span><span>r</span><span>g</span><span style="color: #ffcc00;">y</span><span>.</span><br>
-                <span>D</span><span>r</span><span>i</span><span>v</span><span>e</span> <br><span>I</span><span>n</span><span>n</span><span>o</span><span>v</span><span>a</span><span>t</span><span>i</span><span>o</span><span style="color: #ffcc00;">n</span><span>.</span>
+                <div class="line">
+                    <span>H</span><span>a</span><span>r</span><span>n</span><span>e</span><span>s</span><span>s</span>
+
+                </div>
+                <div class="line ">
+                    <span>E</span><span>n</span><span>e</span><span>r</span><span>g</span><span>y</span><span>.</span> 
+                </div>
+                <div class="line">
+                    <span>D</span><span>r</span><span>i</span><span>v</span><span>e</span> <br>
+                    <span class="accent-word">I</span><span class="accent-word">n</span><span class="accent-word">n</span><span class="accent-word">o</span><span class="accent-word">v</span><span class="accent-word">a</span><span class="accent-word">t</span><span class="accent-word">i</span><span class="accent-word">o</span><span class="accent-word">n</span><span>.</span>
+                </div>
             </h1>
+            
             <p class="hero-subtitle">
                 Axflo Oil & Gas is redefining energy solutions by leveraging cutting-edge technologies and sustainable practices to empower industries and communities worldwide.
             </p>
-            <button class="cta-button" onclick="console.log('CTA button clicked'); window.location.href='#learn-more';">
-                Learn More <span class="arr">&darr;</span>
-            </button>
-        </div>
-        <div class="highlight-card" data-aos="fade-up">
-            <div class="card">
-                <h3 class="card-title">Sustainability</h3>
-                <p class="card-description">Our commitment to a sustainable future drives innovative energy solutions that protect the planet and empower communities.</p>
-                <a href="#" class="learn-more-link">Learn More <span class="arr">&#8594;</span></a>
+            
+            <div class="cta-group">
+                <button class="cta-button" onclick="document.querySelector('#learn-more')?.scrollIntoView({behavior: 'smooth'})">
+                    Explore Solutions
+                </button>
+                <a href="#about" class="secondary-cta">
+                    Our Story
+                    <span class="arrow-icon">→</span>
+                </a>
             </div>
-            <div class="card">
+        </div>
+        
+        <div class="highlight-cards">
+            <div class="highlight-card">
+                <h3 class="card-title">Sustainability</h3>
+                <p class="card-description">
+                    Our commitment to a sustainable future drives innovative energy solutions that protect the planet and empower communities.
+                </p>
+                <a href="#sustainability" class="learn-more-link">
+                    Learn More <span class="arrow-icon">→</span>
+                </a>
+            </div>
+            
+            <div class="highlight-card">
                 <h3 class="card-title">Empowering Growth</h3>
-                <p class="card-description">We deliver reliable and efficient energy solutions, fostering progress for industries, businesses, and economies globally.</p>
-                <a href="#" class="learn-more-link">Learn More <span class="arr">&#8594;</span></a>
+                <p class="card-description">
+                    We deliver reliable and efficient energy solutions, fostering progress for industries, businesses, and economies globally.
+                </p>
+                <a href="#growth" class="learn-more-link">
+                    Learn More <span class="arrow-icon">→</span>
+                </a>
             </div>
         </div>
     </section>
     
 
-
-    <section class="section-layout">
-        <div class="content-section" data-aos="fade-up" id="about">
-            <div class="background-circles">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-            <div class="text-content">
-                <h2>
-                    <span>I</span><span>n</span><span>n</span><span>o</span><span>v</span><span>a</span><span>t</span><span>i</span><span>n</span><span>g</span>
-                    <br>
-                    <span>S</span><span>u</span><span>s</span><span>t</span><span>a</span><span>i</span><span>n</span><span>a</span><span>b</span><span>i</span><span>l</span><span>i</span><span>t</span><span>y</span>
-                    <br>
-                    <span>f</span><span>o</span><span>r</span> <span>t</span><span>h</span><span>e</span>
-              
-                    <span>F</span><span>u</span><span>t</span><span>u</span><span>r</span><span>e</span>
-                </h2>
-                <p>
-                    At Axflo, we embrace advanced technologies to lead the charge in sustainable energy transformation. Through Carbon Capture, Utilization, and Storage (CCUS) and a commitment to renewable energy, we are building a cleaner, greener future. Join us in revolutionizing the energy sector for a sustainable tomorrow.
-                </p>
-                <div class="buttons">
-                    <a href="#" class="watch-video">Watch Video</a>
-                    <div class="buttons2">
-                        <a href="#" class="learn-more">Learn more →</a>
+<section class="section-layout">
+        <div class="background-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="grid-overlay"></div>
+        
+        <div class="container">
+            <!-- First Content Section -->
+            <div class="content-section">
+                <div class="text-content">
+                    <h2>
+                        <span>I</span><span>n</span><span>n</span><span>o</span><span>v</span><span>a</span><span>t</span><span>i</span><span>n</span><span>g</span>
+                        <br>
+                        <span>S</span><span>u</span><span>s</span><span>t</span><span>a</span><span>i</span><span>n</span><span>a</span><span>b</span><span>i</span><span>l</span><span>i</span><span>t</span><span>y</span>
+                        <br>
+                        <span>f</span><span>o</span><span>r</span> <span>t</span><span>h</span><span>e</span> <span>F</span><span>u</span><span>t</span><span>u</span><span>r</span><span>e</span>
+                    </h2>
+                    <p>
+                        At Axflo, we embrace advanced technologies to lead the charge in sustainable energy transformation. Through Carbon Capture, Utilization, and Storage (CCUS) and a commitment to renewable energy, we are building a cleaner, greener future. Join us in revolutionizing the energy sector for a sustainable tomorrow.
+                    </p>
+                    <div class="button-group">
+                        <a href="#" class="btn-primary">Watch Video</a>
+                        <a href="#" class="btn-secondary">Learn more →</a>
+                    </div>
+                </div>
+                <div class="image-content">
+                    <div class="image-wrapper">
+                        <img src="axflo/crew3.jpg" alt="Sustainability Team" loading="lazy">
                     </div>
                 </div>
             </div>
-            <div class="image-content">
-                <img src="crew3.jpg" alt="Sustainability" loading="lazy">
-            </div>
-        </div>
-        <div class="background-circles">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-        </div>
-        <div class="content-section" data-aos="fade-up">
-            <div class="background-circles">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-            <div class="image-content">
-                <img src="oil3.jpg" alt="Social Responsibility" loading="lazy">
-            </div>
-            <div class="text-content">
-                <h2 class="animated-heading">
-                    <span>C</span><span>o</span><span>m</span><span>m</span><span>i</span><span>t</span><span>t</span><span>e</span><span>d</span>
-                
-                    <span>t</span><span>o</span> <br> <span>G</span><span>r</span><span>o</span><span>w</span><span>t</span><span>h</span>
-                   
-                    <span>t</span><span>h</span><span>r</span><span>o</span><span>u</span><span>g</span><span>h</span>
-                    <br>
-                    <span>S</span><span>o</span><span>c</span><span>i</span><span>a</span><span>l</span> <span>I</span><span>m</span><span>p</span><span>a</span><span>c</span><span>t</span>
-                </h2>
-                <p>
-                    At Axflo, we prioritize the growth of our communities through strategic investments in youth empowerment, education, and social initiatives. Our commitment to corporate social responsibility drives us to create opportunities, foster innovation, and build a legacy of progress for future generations.
-                </p>
-                <div class="buttons2">
-                    <a href="#" class="learn-more">Learn more →</a>
+
+            <!-- Second Content Section -->
+            <div class="content-section reverse">
+                <div class="image-content">
+                    <div class="image-wrapper">
+                        <img src="axflo/axflo13.jpg" alt="Social Impact" loading="lazy">
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h2>
+                        <span>C</span><span>o</span><span>m</span><span>m</span><span>i</span><span>t</span><span>t</span><span>e</span><span>d</span>
+                        <span>t</span><span>o</span>
+                        <br>
+                        <span>G</span><span>r</span><span>o</span><span>w</span><span>t</span><span>h</span>
+                        <span>t</span><span>h</span><span>r</span><span>o</span><span>u</span><span>g</span><span>h</span>
+                        <br>
+                        <span>S</span><span>o</span><span>c</span><span>i</span><span>a</span><span>l</span> <span>I</span><span>m</span><span>p</span><span>a</span><span>c</span><span>t</span>
+                    </h2>
+                    <p>
+                        At Axflo, we prioritize the growth of our communities through strategic investments in youth empowerment, education, and social initiatives. Our commitment to corporate social responsibility drives us to create opportunities, foster innovation, and build a legacy of progress for future generations.
+                    </p>
+                    <div class="button-group">
+                        <a href="#" class="btn-primary">Learn more →</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
 
 
 
 
 
     
-    <div style="overflow: hidden; margin-bottom:-4px;">
-        <svg
-          preserveAspectRatio="none"
-          viewBox="0 0 1200 120"
-          xmlns="http://www.w3.org/2000/svg"
-          style="fill: #201f1f; width: 136%; height: 197px; transform: rotate(180deg); "
-        >
-          <path d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z" />
+ <!-- Wave Divider -->
+    <!-- <div style="overflow: hidden; margin-bottom:-4px;" >
+        <svg preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" style="fill: #141414; width: 136%; height: 197px; transform: rotate(180deg);" =>
+            <path d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z" />
         </svg>
-      </div>
-<!-- News Section --><section class="news-section" id="news">
-    <!-- Parallax Circles for News Section -->
-    <div class="background-circles">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-    </div>
+    </div> -->
 
-    <!-- News Header -->
-    <div class="news-header" data-aos="fade-up">
-        <h2 class="animated-heading">
-            <span>N</span><span>e</span><span>w</span><span>s</span>
-            <span>&</span>
-            <span>I</span><span>n</span><span>s</span><span>i</span><span>g</span><span>h</span><span>t</span><span>s</span>
-        </h2>
-        <a href="#">View All Releases →</a>
-    </div>
-
-    <!-- News Content -->
-    <div class="news-content">
-        <!-- Main News -->
-        <div class="main-news" data-aos="fade-up">
-            <img src="plan1.jpg" alt="Low-Carbon Project" loading="lazy">
-            <div class="main-news-overlay">
-                <span>June 07, 2023</span>
-                <h3>Low-Carbon LNG Growth Project Launches in Al Ruwais Industrial City</h3>
-                <p>Axflo's innovative LNG growth project reinforces its commitment to driving a sustainable energy future, delivering efficient and eco-friendly solutions.</p>
-            </div>
-        </div>
-
-        <!-- News List -->
-        <div class="news-list">
-            <div class="news-item" data-aos="fade-up">
-                <span>December 29, 2024</span>
-                <h4>Axflo Commits $2.4 Billion to Revolutionize Onshore Water Supply</h4>
-                <p>Innovative water supply solutions set to enhance sustainability in industrial operations.</p>
-            </div>
-            <div class="news-item" data-aos="fade-up">
-                <span>June 07, 2024</span>
-                <h4>Axflo Designs Cutting-Edge Remotely Operated Marine Supply Vessels</h4>
-                <p>Setting new benchmarks in maritime technology with autonomous vessel innovation.</p>
-            </div>
-            <div class="news-item" data-aos="fade-up">
-                <span>June 07, 2024</span>
-                <h4>Axflo Strengthens Global Reach with Five Next-Gen LNG Carriers</h4>
-                <p>Enhancing energy logistics with efficiency, reliability, and advanced shipping solutions.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<div style="overflow: hidden;">
-    <svg
-      preserveAspectRatio="none"
-      viewBox="0 0 1200 120"
-      xmlns="http://www.w3.org/2000/svg"
-      style="fill: #201f1f; width: 136%; height: 197px; "
-    >
-      <path d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z" />
-    </svg>
-  </div>
-
-
-
-  <section class="job-postings" data-aos="fade-up" id="careers">
-    <!-- Parallax Circles for Visual Enhancement -->
-    <div class="background-circles">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-    </div>
-
-    <!-- Job Postings Header -->
-    <div class="job">
-        <h2>
-            <span>C</span><span>a</span><span>r</span><span>e</span><span>e</span><span>r</span><span>s</span>
-            <span>&</span>
-            <span>O</span><span>p</span><span>p</span><span>o</span><span>r</span><span>t</span><span>u</span><span>n</span><span>i</span><span>t</span><span>i</span><span>e</span><span>s</span>
-        </h2>
-        <p>At Axflo Oil & Gas, we are empowering talent to shape the future of sustainable energy. Explore opportunities to join our mission of innovation and excellence.</p>
-    </div>
-
-    <!-- Job Postings -->
-    <div class="job-list">
-        <div class="job-posting" data-aos="fade-up">
-            <h3>Renewable Energy Engineer</h3>
-            <p>Contribute to the development of cutting-edge renewable energy projects driving sustainable innovation.</p>
-            <a href="#">Apply Now →</a>
-        </div>
-        <div class="job-posting" data-aos="fade-up">
-            <h3>Maritime Operations Coordinator</h3>
-            <p>Lead and oversee the operational excellence of our advanced LNG shipping fleet.</p>
-            <a href="#">Apply Now →</a>
-        </div>
-        <div class="job-posting" data-aos="fade-up">
-            <h3>Environmental Impact Analyst</h3>
-            <p>Analyze and optimize projects to align with global sustainability and environmental standards.</p>
-            <a href="#">Apply Now →</a>
-        </div>
-        <div class="job-posting" data-aos="fade-up">
-            <h3>Carbon Capture and Storage Engineer</h3>
-            <p>Develop transformative CCUS technologies to redefine sustainable energy solutions.</p>
-            <a href="#">Apply Now →</a>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-<!-- Values Section -->
-<section class="values-section">
-    <div data-aos="fade-up">
-        <!-- Parallax Circles for Values Section -->
+    <!-- Enhanced News Section -->
+    <section class="news-section" id="news">
+        <!-- Enhanced Background Animation -->
         <div class="background-circles">
             <div class="circle"></div>
             <div class="circle"></div>
@@ -329,150 +251,491 @@
             <div class="circle"></div>
         </div>
 
-        <!-- Values Header -->
-        <div class="values-header">
-            <h2 class="animated-heading">
-                <span>O</span><span>u</span><span>r</span>
-                <span>C</span><span>o</span><span>r</span><span>e</span>
-                <span>V</span><span>a</span><span>l</span><span>u</span><span>e</span><span>s</span>
-            </h2>
-        </div>
-
-        <!-- Values Grid -->
-        <div class="values-grid">
-            <!-- Value Card 1 -->
-            <div class="value-card" data-aos="fade-right" data-aos-delay="100">
-                <i class="fas fa-handshake" aria-hidden="true"></i>
-                <h3>Collaboration</h3>
-                <p>We believe in the power of partnerships. By working together with our clients, peers, and stakeholders, we deliver impactful results for a shared energy future.</p>
+        <div class="news-container">
+            <!-- Enhanced Header -->
+            <div class="news-header">
+                <div>
+                    <h2>News & Insights</h2>
+                </div>
+                <div class="news-header-meta">
+                    <p class="news-header-subtitle">Stay updated with our latest developments, industry insights, and company milestones</p>
+                    <a href="#" class="view-all-btn">
+                        View All Releases
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
             </div>
 
-            <!-- Value Card 2 -->
-            <div class="value-card" data-aos="fade-up" data-aos-delay="200">
-                <i class="fas fa-bolt" aria-hidden="true"></i>
-                <h3>Efficiency</h3>
-                <p>Efficiency drives every aspect of our operations, ensuring optimal use of resources while delivering sustainable energy solutions.</p>
-            </div>
+            <!-- Enhanced News Content -->
+            <div class="news-content">
+                <!-- Enhanced Main News -->
+                <div class="main-news">
+                    <img src="axflo/plan1.jpg" alt="Low-Carbon Project" class="main-news-image" loading="lazy">
+                    <div class="main-news-content">
+                        <span class="main-news-date">June 07, 2025</span>
+                        <h3 class="main-news-title">Low-Carbon LNG Growth Project Launches in Al Ruwais Industrial City</h3>
+                        <p class="main-news-excerpt">Axflo's innovative LNG growth project reinforces its commitment to driving a sustainable energy future, delivering efficient and eco-friendly solutions that set new industry standards.</p>
+                    </div>
+                </div>
 
-            <!-- Value Card 3 -->
-            <div class="value-card" data-aos="fade-up" data-aos-delay="300">
-                <i class="fas fa-lightbulb" aria-hidden="true"></i>
-                <h3>Innovation</h3>
-                <p>At Axflo, innovation is at our core. We continuously advance technologies to pioneer solutions that shape the energy industry.</p>
-            </div>
-
-            <!-- Value Card 4 -->
-            <div class="value-card" data-aos="fade-down" data-aos-delay="400">
-                <i class="fas fa-leaf" aria-hidden="true"></i>
-                <h3>Integrity</h3>
-                <p>Our operations are grounded in trust and transparency. We uphold ethical standards and foster respect in every interaction.</p>
-            </div>
-
-            <!-- Value Card 5 -->
-            <div class="value-card" data-aos="flip-left" data-aos-delay="500">
-                <i class="fas fa-shield-alt" aria-hidden="true"></i>
-                <h3>Reliability</h3>
-                <p>Dependability is central to our promise. We deliver consistent, high-quality results that our clients and stakeholders can trust.</p>
-            </div>
-
-            <!-- Value Card 6 -->
-            <div class="value-card" data-aos="flip-right" data-aos-delay="600">
-                <i class="fas fa-globe" aria-hidden="true"></i>
-                <h3>Sustainability</h3>
-                <p>We are committed to creating a greener future through eco-conscious practices and sustainable energy solutions.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-  <!-- Achievements Section -->
-  <section  class="achievements-section" id="achievements">
-    <div   data-aos="fade-up">
-    <!-- SVG Curves for Top and Bottom -->
-    <svg class="curve-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#1a1a1a" fill-opacity="1" d="M0,160L80,176C160,192,320,224,480,240C640,256,800,256,960,240C1120,224,1280,192,1360,176L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-    </svg>
-
-    <!-- Parallax Circles for Achievements Section -->
-    <div class="background-circles">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-    </div>
-
-    <!-- Section Header -->
-    <div class="achievements-header">
-        <h2 class="animated-heading">
-            <span>I</span><span>n</span><span>n</span><span>o</span><span>v</span><span>a</span><span>t</span><span>i</span><span>v</span><span>e</span>
-            <span>S</span><span>o</span><span>l</span><span>u</span><span>t</span><span>i</span><span>o</span><span>n</span><span>s</span>
-            <br>
-            <span>&</span>
-            <br>
-            <span>A</span><span>c</span><span>h</span><span>i</span><span>e</span><span>v</span><span>e</span><span>m</span><span>e</span><span>n</span><span>t</span><span>s</span>
-        </h2>
-        <p>Celebrating Axflo Oil & Gas' remarkable projects, cutting-edge innovations, and collaborations driving a sustainable future.</p>
-    </div>
-
-    <!-- Achievements Grid -->
-    <div class="achievements-grid">
-        <!-- Achievement Card 1 -->
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
-            <img src="Hydrocarbon-spill-kits.jpg" alt="Oil Spill Recovery Project" loading="lazy">
-            <div class="achievement-card-content">
-                <h3>Hydrocarbon Cleanup</h3>
-                <p>Successfully remediated hydrocarbon-impacted sites along pipelines in collaboration with Heritage Energy.</p>
+                <!-- Enhanced News List -->
+                <div class="news-list">
+                    <div class="news-item">
+                        <span class="news-item-date">March 29, 2025</span>
+                        <h4 class="news-item-title">Axflo Commits $2.4 Billion to Revolutionize Onshore Water Supply</h4>
+                        <p class="news-item-excerpt">Innovative water supply solutions set to enhance sustainability in industrial operations across multiple sectors.</p>
+                        <span class="read-more">Read more →</span>
+                    </div>
+                    
+                    <div class="news-item">
+                        <span class="news-item-date">Feburary 07, 2025</span>
+                        <h4 class="news-item-title">Axflo Designs Cutting-Edge Remotely Operated Marine Supply Vessels</h4>
+                        <p class="news-item-excerpt">Setting new benchmarks in maritime technology with autonomous vessel innovation and advanced navigation systems.</p>
+                        <span class="read-more">Read more →</span>
+                    </div>
+                    
+                    <div class="news-item">
+                        <span class="news-item-date">January  07, 2025</span>
+                        <h4 class="news-item-title">Axflo Strengthens Global Reach with Five Next-Gen LNG Carriers</h4>
+                        <p class="news-item-excerpt">Enhancing energy logistics with efficiency, reliability, and advanced shipping solutions for global markets.</p>
+                        <span class="read-more">Read more →</span>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Achievement Card 2 -->
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
-            <img src="oilactivities/oil3.jpg" alt="Advanced Waste Management" loading="lazy">
-            <div class="achievement-card-content">
-                <h3>Advanced Waste Management</h3>
-                <p>Implemented innovative waste treatment solutions, ensuring sustainable and eco-friendly operations.</p>
-            </div>
-        </div>
-        <!-- Achievement Card 3 -->
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
-            <img src="permoilboom2.jpg" alt="Permanent Boom Installation" loading="lazy">
-            <div class="achievement-card-content">
-                <h3>Permanent Boom Installation</h3>
-                <p>Deployed Ro-Fence boom systems at multiple flow stations to enhance oil spill containment and recovery.</p>
-            </div>
-        </div>
-        <!-- Achievement Card 4 -->
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="400">
-            <img src="marineops.webp" alt="Marine Operations Optimization" loading="lazy">
-            <div class="achievement-card-content">
-                <h3>Marine Operations Optimization</h3>
-                <p>Enhanced the efficiency of maritime logistics with state-of-the-art remotely operated marine vessels.</p>
-            </div>
-        </div>
-    </div>
+    </section>
 
-    <!-- SVG for Bottom Curve -->
-    <svg class="curve-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#1a1a1a" fill-opacity="1" d="M0,96L80,117.3C160,139,320,181,480,176C640,171,800,117,960,122.7C1120,128,1280,192,1360,224L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-    </svg>
-</div>
-</section>
-<div style="overflow: hidden;">
+
+<!-- <div style="overflow: hidden;">
     <svg
       preserveAspectRatio="none"
       viewBox="0 0 1200 120"
       xmlns="http://www.w3.org/2000/svg"
-      style="fill: #050505; width: 136%; height: 197px;"
+      style="fill: #201f1f; width: 136%; height: 197px;" 
     >
       <path d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z" />
     </svg>
-  </div>
+  </div> -->
+
+ <section class="job-postings" id="careers">
+        <!-- Animated Particles Background -->
+        <div class="background-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <!-- Header Section -->
+        <div class="careers-header">
+            <span class="section-label">Join Our Team</span>
+            <h2>Careers & Opportunities</h2>
+            <p class="careers-subtitle">
+                At Axflo Oil & Gas, we are empowering talent to shape the future of sustainable energy. 
+                Explore opportunities to join our mission of innovation and excellence.
+            </p>
+        </div>
+
+        <!-- Statistics -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Team Members</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">25+</div>
+                <div class="stat-label">Countries</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">15</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Employee Satisfaction</div>
+            </div>
+        </div>
+
+        <!-- Job Listings -->
+        <div class="job-grid">
+            <div class="job-card" style="--delay: 0s">
+                <div class="job-header">
+                    <div class="job-icon">⚡</div>
+                    <div class="job-title-group">
+                        <h3 class="job-title">Renewable Energy Engineer</h3>
+                        <div class="job-department">Engineering</div>
+                    </div>
+                </div>
+                <p class="job-description">
+                    Lead the development of cutting-edge renewable energy projects driving sustainable innovation. 
+                    Work with cross-functional teams to design and implement next-generation energy solutions.
+                </p>
+                <div class="job-requirements">
+                    <h4>Key Requirements:</h4>
+                    <div class="requirements-list">
+                        <span class="requirement-tag">Renewable Energy</span>
+                        <span class="requirement-tag">Project Management</span>
+                        <span class="requirement-tag">Sustainability</span>
+                        <span class="requirement-tag">Innovation</span>
+                    </div>
+                </div>
+                <div class="job-footer">
+                    <span class="job-type">Full-time</span>
+                    <a href="#" class="apply-btn">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="job-card" style="--delay: 0.1s">
+                <div class="job-header">
+                    <div class="job-icon">🚢</div>
+                    <div class="job-title-group">
+                        <h3 class="job-title">Maritime Operations Coordinator</h3>
+                        <div class="job-department">Operations</div>
+                    </div>
+                </div>
+                <p class="job-description">
+                    Lead and oversee the operational excellence of our advanced LNG shipping fleet. 
+                    Ensure safe, efficient, and compliant maritime operations across global routes.
+                </p>
+                <div class="job-requirements">
+                    <h4>Key Requirements:</h4>
+                    <div class="requirements-list">
+                        <span class="requirement-tag">Maritime Operations</span>
+                        <span class="requirement-tag">LNG Transport</span>
+                        <span class="requirement-tag">Safety Management</span>
+                        <span class="requirement-tag">Logistics</span>
+                    </div>
+                </div>
+                <div class="job-footer">
+                    <span class="job-type">Full-time</span>
+                    <a href="#" class="apply-btn">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="job-card" style="--delay: 0.2s">
+                <div class="job-header">
+                    <div class="job-icon">🌍</div>
+                    <div class="job-title-group">
+                        <h3 class="job-title">Environmental Impact Analyst</h3>
+                        <div class="job-department">Sustainability</div>
+                    </div>
+                </div>
+                <p class="job-description">
+                    Analyze and optimize projects to align with global sustainability and environmental standards. 
+                    Drive environmental stewardship across all company operations and initiatives.
+                </p>
+                <div class="job-requirements">
+                    <h4>Key Requirements:</h4>
+                    <div class="requirements-list">
+                        <span class="requirement-tag">Environmental Science</span>
+                        <span class="requirement-tag">Impact Assessment</span>
+                        <span class="requirement-tag">Compliance</span>
+                        <span class="requirement-tag">Data Analysis</span>
+                    </div>
+                </div>
+                <div class="job-footer">
+                    <span class="job-type">Full-time</span>
+                    <a href="#" class="apply-btn">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="job-card" style="--delay: 0.3s">
+                <div class="job-header">
+                    <div class="job-icon">⚗️</div>
+                    <div class="job-title-group">
+                        <h3 class="job-title">Carbon Capture Engineer</h3>
+                        <div class="job-department">Technology</div>
+                    </div>
+                </div>
+                <p class="job-description">
+                    Develop transformative CCUS technologies to redefine sustainable energy solutions. 
+                    Pioneer breakthrough innovations in carbon capture, utilization, and storage systems.
+                </p>
+                <div class="job-requirements">
+                    <h4>Key Requirements:</h4>
+                    <div class="requirements-list">
+                        <span class="requirement-tag">Carbon Capture</span>
+                        <span class="requirement-tag">Process Engineering</span>
+                        <span class="requirement-tag">R&D</span>
+                        <span class="requirement-tag">Clean Technology</span>
+                    </div>
+                </div>
+                <div class="job-footer">
+                    <span class="job-type">Full-time</span>
+                    <a href="#" class="apply-btn">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="job-card" style="--delay: 0.4s">
+                <div class="job-header">
+                    <div class="job-icon">📊</div>
+                    <div class="job-title-group">
+                        <h3 class="job-title">Senior Data Scientist</h3>
+                        <div class="job-department">Technology</div>
+                    </div>
+                </div>
+                <p class="job-description">
+                    Leverage advanced analytics and machine learning to optimize energy operations and drive 
+                    data-driven decision making across the organization.
+                </p>
+                <div class="job-requirements">
+                    <h4>Key Requirements:</h4>
+                    <div class="requirements-list">
+                        <span class="requirement-tag">Machine Learning</span>
+                        <span class="requirement-tag">Big Data</span>
+                        <span class="requirement-tag">Python/R</span>
+                        <span class="requirement-tag">Analytics</span>
+                    </div>
+                </div>
+                <div class="job-footer">
+                    <span class="job-type">Full-time</span>
+                    <a href="#" class="apply-btn">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="job-card" style="--delay: 0.5s">
+                <div class="job-header">
+                    <div class="job-icon">🔒</div>
+                    <div class="job-title-group">
+                        <h3 class="job-title">HSE Manager</h3>
+                        <div class="job-department">Safety</div>
+                    </div>
+                </div>
+                <p class="job-description">
+                    Lead health, safety, and environmental initiatives across global operations. 
+                    Ensure compliance with international standards and drive continuous improvement in safety performance.
+                </p>
+                <div class="job-requirements">
+                    <h4>Key Requirements:</h4>
+                    <div class="requirements-list">
+                        <span class="requirement-tag">Safety Management</span>
+                        <span class="requirement-tag">Risk Assessment</span>
+                        <span class="requirement-tag">Compliance</span>
+                        <span class="requirement-tag">Leadership</span>
+                    </div>
+                </div>
+                <div class="job-footer">
+                    <span class="job-type">Full-time</span>
+                    <a href="#" class="apply-btn">Apply Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="careers-cta">
+            <h3 class="cta-title">Don't See Your Perfect Role?</h3>
+            <p class="cta-description">
+                We're always looking for exceptional talent to join our team. 
+                Send us your resume and let's explore how you can contribute to our mission.
+            </p>
+            <a href="#" class="cta-btn">Submit Your Resume</a>
+        </div>
+    </section>
+
+
+ <!-- Enhanced Values Section -->
+    <section class="values-section">
+        <!-- Background Elements -->
+        <div class="background-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <div class="geometric-bg">
+            <div class="geo-shape"></div>
+            <div class="geo-shape"></div>
+            <div class="geo-shape"></div>
+        </div>
+
+        <div class="values-container">
+            <!-- Enhanced Header -->
+            <div class="values-header">
+                <h2>
+                    <span>O</span><span>u</span><span>r</span>
+                    <span></span>
+                    <span>C</span><span>o</span><span>r</span><span>e</span>
+                    <span></span>
+                    <span>V</span><span>a</span><span>l</span><span>u</span><span>e</span><span>s</span>
+                </h2>
+                <p class="values-subtitle">
+                    Guiding principles that define our commitment to excellence, integrity, and sustainable innovation in the energy sector.
+                </p>
+            </div>
+
+            <!-- Enhanced Values Grid -->
+            <div class="values-grid">
+                <!-- Enhanced Value Cards -->
+                <div class="value-card">
+                    <div class="card-content">
+                        <div class="value-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="value-title">Collaboration</h3>
+                        <p class="value-description">
+                            We believe in the transformative power of strategic partnerships. By fostering meaningful relationships with clients, industry peers, and stakeholders, we create synergistic solutions that drive collective success in shaping a sustainable energy future.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="value-card">
+                    <div class="card-content">
+                        <div class="value-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="value-title">Efficiency</h3>
+                        <p class="value-description">
+                            Operational excellence through intelligent resource optimization defines our approach. We leverage cutting-edge technologies and streamlined processes to maximize output while minimizing waste, ensuring sustainable energy solutions that deliver exceptional value.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="value-card">
+                    <div class="card-content">
+                        <div class="value-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="value-title">Innovation</h3>
+                        <p class="value-description">
+                            Innovation is the cornerstone of our identity at Axflo. We continuously push the boundaries of technological advancement, pioneering breakthrough solutions that revolutionize industry standards and create new possibilities in energy sector development.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="value-card">
+                    <div class="card-content">
+                        <div class="value-icon">
+                            <i class="fas fa-shield-check"></i>
+                        </div>
+                        <h3 class="value-title">Integrity</h3>
+                        <p class="value-description">
+                            Our foundation rests on unwavering ethical standards and transparent practices. We build enduring trust through honest communication, accountability, and respect in every interaction, ensuring that our operations reflect the highest moral principles.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="value-card">
+                    <div class="card-content">
+                        <div class="value-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 class="value-title">Reliability</h3>
+                        <p class="value-description">
+                            Dependability forms the bedrock of our client relationships. We consistently deliver superior results through rigorous quality assurance, proven methodologies, and unwavering commitment to meeting and exceeding expectations in every project we undertake.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="value-card">
+                    <div class="card-content">
+                        <div class="value-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 class="value-title">Sustainability</h3>
+                        <p class="value-description">
+                            Environmental stewardship drives our vision for tomorrow. We are dedicated to developing eco-conscious solutions that protect our planet while meeting today's energy demands, creating a legacy of responsible innovation for future generations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Achievements Section -->
+    <section class="achievements-section" id="achievements">
+        <!-- Enhanced SVG Curves -->
+        <svg class="curve-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="#1a1a1a" fill-opacity="1" d="M0,160L80,176C160,192,320,224,480,240C640,256,800,256,960,240C1120,224,1280,192,1360,176L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+        </svg>
+
+        <!-- Enhanced Background Elements -->
+        <div class="background-elements">
+            <div class="floating-orb"></div>
+            <div class="floating-orb"></div>
+            <div class="floating-orb"></div>
+            <div class="grid-pattern"></div>
+        </div>
+
+        <div class="container">
+            <!-- Enhanced Section Header -->
+            <div class="achievements-header">
+                <h2>
+                    Innovative Solutions<br>
+                    & Achievements
+                </h2>
+                <p>Celebrating Axflo Oil & Gas' remarkable projects, cutting-edge innovations, and strategic collaborations driving sustainable excellence in the energy sector.</p>
+            </div>
+
+            <!-- Enhanced Achievements Grid -->
+            <div class="achievements-grid">
+                <!-- Achievement Card 1 -->
+                <div class="achievement-card">
+                    <div class="achievement-badge"></div>
+                    <div class="achievement-image">
+                        <img src="axflo/Hydrocarbon-spill-kits.jpg" alt="Hydrocarbon Cleanup Operations" loading="lazy">
+                    </div>
+                    <div class="achievement-card-content">
+                        <h3>Hydrocarbon Cleanup Excellence</h3>
+                        <p>Successfully remediated hydrocarbon-impacted sites along critical pipeline infrastructure in strategic collaboration with Heritage Energy, demonstrating our commitment to environmental restoration.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 2 -->
+                <div class="achievement-card">
+                    <div class="achievement-badge"></div>
+                    <div class="achievement-image">
+                        <img src="oilactivities/oil13.jpg" alt="Advanced Waste Management Systems" loading="lazy">
+                    </div>
+                    <div class="achievement-card-content">
+                        <h3>Advanced Waste Management</h3>
+                        <p>Pioneered innovative waste treatment solutions utilizing cutting-edge technology to ensure sustainable operations while maintaining the highest environmental standards across all facilities.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 3 -->
+                <div class="achievement-card">
+                    <div class="achievement-badge"></div>
+                    <div class="achievement-image">
+                        <img src="axflo/permoilboom2.jpg" alt="Permanent Boom Installation" loading="lazy">
+                    </div>
+                    <div class="achievement-card-content">
+                        <h3>Permanent Boom Installation</h3>
+                        <p>Strategically deployed advanced Ro-Fence boom systems at multiple flow stations, significantly enhancing oil spill containment capabilities and rapid response recovery operations.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 4 -->
+                <div class="achievement-card">
+                    <div class="achievement-badge"></div>
+                    <div class="achievement-image">
+                        <img src="axflo/marineops.webp" alt="Marine Operations Optimization" loading="lazy">
+                    </div>
+                    <div class="achievement-card-content">
+                        <h3>Marine Operations Optimization</h3>
+                        <p>Revolutionized maritime logistics efficiency through the integration of state-of-the-art remotely operated marine vessels, setting new industry benchmarks for operational excellence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enhanced SVG Bottom Curve -->
+        <svg class="curve-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="#050505" fill-opacity="1" d="M0,96L80,117.3C160,139,320,181,480,176C640,171,800,117,960,122.7C1120,128,1280,192,1360,224L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+        </svg>
+    </section>
 
 
 
 
-<section class="services-section">
-    <div data-aos="fade-up">
+
+
+
+    <section class="services-section">
         <div class="background-circles">
             <div class="circle"></div>
             <div class="circle"></div>
@@ -485,6 +748,7 @@
         <div class="services-header" id="services">
             <h2 class="animated-heading">
                 <span>K</span><span>e</span><span>y</span>
+                <span> </span>
                 <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
             </h2>
         </div>
@@ -492,173 +756,97 @@
         <!-- Services Grid -->
         <div class="services-grid">
             <!-- Service Card 1 -->
-            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card">
                 <img src="oilactivities/oil2.jpg" alt="Containment and Recovery of Crude Oil" loading="lazy">
                 <div class="service-card-content">
                     <h3>Containment and Recovery of Crude Oil</h3>
-                    <p>Specialized in rapid containment and recovery of crude oil spills to mitigate environmental damage and protect ecosystems.</p>
+                    <p>Specialized in rapid containment and recovery of crude oil spills to mitigate environmental damage and protect ecosystems with cutting-edge technology and expert response teams.</p>
                     <a href="#" class="learn-more">Learn More →</a>
                 </div>
             </div>
         
             <!-- Service Card 2 -->
-            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="hydrocarbon1.jpg" alt="Clean Up and Remediation of Hydrocarbon Impacted Areas" loading="lazy">
+            <div class="service-card">
+                <img src="axflo/hydrocarbon1.jpg" alt="Clean Up and Remediation of Hydrocarbon Impacted Areas" loading="lazy">
                 <div class="service-card-content">
                     <h3>Clean Up and Remediation of Hydrocarbon Impacted Areas</h3>
-                    <p>Providing sustainable solutions for cleaning and remediating hydrocarbon-contaminated environments to restore natural habitats.</p>
+                    <p>Providing sustainable solutions for cleaning and remediating hydrocarbon-contaminated environments to restore natural habitats with innovative bioremediation techniques.</p>
                     <a href="#" class="learn-more">Learn More →</a>
                 </div>
             </div>
 
             <!-- Service Card 3 -->
-            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                <img src="oilactivities/oil1.jpg" alt="Supply of Oil Spill Response Equipment" loading="lazy">
+            <div class="service-card">
+                <img src="axflo/axflo20.jpg" alt="Supply of Oil Spill Response Equipment" loading="lazy">
                 <div class="service-card-content">
                     <h3>Supply of Oil Spill Response Equipment</h3>
-                    <p>Equip your operations with industry-grade oil spill response kits for effective and timely environmental protection.</p>
+                    <p>Equip your operations with industry-grade oil spill response kits for effective and timely environmental protection, featuring state-of-the-art containment systems.</p>
                     <a href="#" class="learn-more">Explore Services →</a>
                 </div>
             </div>
-        
 
             <!-- Service Card 4 -->
-            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-                <img src="plan1.jpg" alt="Digital Oilfield Innovations" loading="lazy">
+            <div class="service-card">
+                <img src="axflo/plan1.jpg" alt="Digital Oilfield Innovations" loading="lazy">
                 <div class="service-card-content">
                     <h3>Digital Oilfield Innovations</h3>
-                    <p>Leverage digital transformation technologies for real-time monitoring, efficient operations, and superior decision-making in oilfields.</p>
+                    <p>Leverage digital transformation technologies for real-time monitoring, efficient operations, and superior decision-making in oilfields through AI and IoT integration.</p>
                     <a href="#" class="learn-more">Discover More →</a>
                 </div>
             </div>
 
             <!-- Service Card 5 -->
-            <div class="service-card" data-aos="fade-up" data-aos-delay="500">
-                <img src="seis.jpeg" alt="Seismic Analysis" loading="lazy">
+            <div class="service-card">
+                <img src="axflo/seis.jpeg" alt="Seismic Analysis" loading="lazy">
                 <div class="service-card-content">
                     <h3>Seismic Data Analysis</h3>
-                    <p>Enhance energy exploration with Axflo’s precise seismic analysis, maximizing hydrocarbon recovery while minimizing risks.</p>
+                    <p>Enhance energy exploration with precise seismic analysis, maximizing hydrocarbon recovery while minimizing risks through advanced computational modeling and interpretation.</p>
                     <a href="#" class="learn-more">Find Out More →</a>
                 </div>
             </div>
 
             <!-- Service Card 6 -->
-            <div class="service-card" data-aos="fade-up" data-aos-delay="500">
-                <img src="hydrocarbon2.jpg" alt="Labour Support for Containment & Recovery" loading="lazy">
+            <div class="service-card">
+                <img src="axflo/hydrocarbon2.jpg" alt="Labour Support for Containment & Recovery" loading="lazy">
                 <div class="service-card-content">
                     <h3>Labour Support for Containment & Recovery</h3>
-                    <p>Our specialized workforce ensures swift response and efficient containment of oil spills in diverse environments.</p>
+                    <p>Our specialized workforce ensures swift response and efficient containment of oil spills in diverse environments, with highly trained professionals and emergency response protocols.</p>
                     <a href="#" class="learn-more">Find Out More →</a>
                 </div>
             </div>
             
             <!-- Service Card 7 -->
-            <div class="service-card" data-aos="fade-up" data-aos-delay="700">
-                <img src="enviroment.jpg" alt="Environmental Impact Services" loading="lazy">
+            <div class="service-card">
+                <img src="axflo/enviroment.jpg" alt="Environmental Impact Services" loading="lazy">
                 <div class="service-card-content">
                     <h3>Environmental Impact Services</h3>
-                    <p>Prioritize eco-conscious growth with tailored environmental assessments and compliance strategies for sustainable energy operations.</p>
+                    <p>Prioritize eco-conscious growth with tailored environmental assessments and compliance strategies for sustainable energy operations, ensuring regulatory adherence and environmental stewardship.</p>
                     <a href="#" class="learn-more">Learn More →</a>
                 </div>
             </div>
 
             <!-- Service Card 8 -->
-            <div class="service-card" data-aos="fade-up" data-aos-delay="800">
-                <img src="lease.jpg" alt="Equipment Leasing" loading="lazy">
+            <div class="service-card">
+                <img src="axflo/lease.jpg" alt="Equipment Leasing" loading="lazy">
                 <div class="service-card-content">
                     <h3>Equipment Leasing</h3>
-                    <p>Optimize capital investments with flexible leasing options tailored to your project needs, empowering operational efficiency.</p>
+                    <p>Optimize capital investments with flexible leasing options tailored to your project needs, empowering operational efficiency with premium equipment and maintenance support.</p>
                     <a href="#" class="learn-more">Explore Options →</a>
                 </div>
             </div>
 
             <!-- Service Card 9 -->
-            <div class="service-card" data-aos="fade-up" data-aos-delay="900">
+            <div class="service-card">
                 <img src="wastemag.png" alt="Sustainable Waste Management" loading="lazy">
                 <div class="service-card-content">
                     <h3>Sustainable Waste Management</h3>
-                    <p>Minimize environmental impact with Axflo’s innovative recycling and waste management solutions for a greener future.</p>
+                    <p>Minimize environmental impact with innovative recycling and waste management solutions for a greener future, incorporating circular economy principles and zero-waste initiatives.</p>
                     <a href="#" class="learn-more">Find Out More →</a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section class="certifications-section" id="certifications" data-aos="fade-up">
-    <!-- Curved Divider (Desktop Only) -->
-    <div style="overflow: hidden;">
-        <svg
-            preserveAspectRatio="none"
-            viewBox="0 0 1200 120"
-            xmlns="http://www.w3.org/2000/svg"
-            class="certsvg"
-            style="
-                fill: #201f1f;
-                width: 136%;
-                height: 90px;
-                transform: rotate(180deg);
-                margin-bottom: -4px;
-            "
-        >
-            <path
-                d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z"
-            />
-        </svg>
-    </div>
-
-    <!-- Left Side: Title & Content -->
-    <div class="certifications-content">
-        <h2>
-            Industry <br />
-            <span>Certifications</span>
-        </h2>
-        <p>
-            At Axflo Oil & Gas Nig Ltd, our commitment to excellence is reflected in
-            the global certifications we have achieved. These certifications ensure
-            that we adhere to the highest standards of quality and environmental
-            management in all our operations.
-        </p>
-        <div class="learn-more-btn">
-            <a href="#">Learn More →</a>
-        </div>
-    </div>
-
-    <!-- Right Side: Scrollable Certifications List -->
-    <div class="certifications-list" data-aos="fade-up">
-        <div class="fade-effect top"></div>
-        <div class="list-container" id="certificationsContainer">
-            <div class="certification-item">
-                <span>ISO 9001:2015 (Quality Management System)</span>
-                <a href="certificates/ISO9001.pdf" download target="_blank">
-                    <button class="download-btn">
-                        <i class="fas fa-download"></i>
-                    </button>
-                </a>
-            </div>
-            <div class="certification-item">
-                <span>ISO 14001:2015 (Environmental Management System)</span>
-                <a href="certificates/ISO14001.pdf" download target="_blank">
-                    <button class="download-btn">
-                        <i class="fas fa-download"></i>
-                    </button>
-                </a>
-            </div>
-            <div class="certification-item">
-                <span>ISO 10001:2015 (Waste Management System)</span>
-                <a href="certificates/ISO10001_2015_Waste_Management.pdf" download target="_blank">
-                    <button class="download-btn">
-                        <i class="fas fa-download"></i>
-                    </button>
-                </a>
-            </div>
-        </div>
-    </div>
-    
-        <div class="fade-effect bottom"></div>
-    </div>
-</section>
-
+    </section>
+ 
 
 <section class="trusted-section" id="clients">
     <!-- Parallax Background Circles -->
@@ -850,23 +1038,33 @@
 ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-
-function toggleNav() {
-            const nav = document.querySelector('.nav');
+  // Enhanced Navigation Toggle
+        function toggleNav() {
+            const mobileNav = document.querySelector('.mobile-nav');
             const toggleBtn = document.querySelector('.toggle-btn');
-            nav.classList.toggle('active');
-            toggleBtn.classList.toggle('active');
-            // Toggle overlay visibility
             const overlay = document.querySelector('.overlay');
-            overlay.classList.toggle('active');
+            
+            const isActive = mobileNav.classList.contains('active');
+            
+            if (!isActive) {
+                mobileNav.classList.add('active');
+                toggleBtn.classList.add('active');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            } else {
+                mobileNav.classList.remove('active');
+                toggleBtn.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
         }
 
-        // Function to handle navbar style on scroll
+        // Enhanced Scroll Handler - Original Logic
         function handleScroll() {
             const header = document.querySelector('.header');
             const navLinks = document.querySelectorAll('.nav__links a');
             const navAction = document.querySelector('.nav__action a');
-
+            
             if (window.scrollY > 50) {
                 header.classList.add('scrolled');
                 // Change link colors to black
@@ -874,8 +1072,10 @@ function toggleNav() {
                     link.style.color = '#000';
                 });
                 // Change action button colors
-                navAction.style.color = '#000';
-                navAction.style.borderColor = '#FFD700'; // Match gold/yellow
+                if (navAction) {
+                    navAction.style.color = '#000';
+                    navAction.style.borderColor = '#FFD700';
+                }
             } else {
                 header.classList.remove('scrolled');
                 // Revert link colors to white
@@ -883,22 +1083,92 @@ function toggleNav() {
                     link.style.color = '#fff';
                 });
                 // Revert action button colors
-                navAction.style.color = '#ffcc00'; // Original gold/yellow
-                navAction.style.borderColor = '#ffcc00';
+                if (navAction) {
+                    navAction.style.color = '#ffcc00';
+                    navAction.style.borderColor = '#ffcc00';
+                }
             }
         }
 
-        // Event listeners
-        window.addEventListener('scroll', handleScroll);
- function toggleNav() {
-    const nav = document.querySelector('.nav');
-    const toggleBtn = document.querySelector('.toggle-btn');
-    const overlay = document.querySelector('.overlay');
-    const isActive = nav.classList.toggle('active');
-    toggleBtn.classList.toggle('active');
-    overlay.classList.toggle('active');
-    toggleBtn.setAttribute('aria-expanded', isActive);
-}
+        // Smooth scroll for anchor links
+        function smoothScroll() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    
+                    const targetId = link.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const offsetTop = targetElement.offsetTop - 120;
+                        
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile nav if open
+                        if (document.querySelector('.mobile-nav').classList.contains('active')) {
+                            toggleNav();
+                        }
+                    }
+                });
+            });
+        }
+
+        // Mouse parallax effect for navbar
+        function addParallaxEffect() {
+            const nav = document.querySelector('.nav');
+            
+            document.addEventListener('mousemove', (e) => {
+                const mouseX = e.clientX / window.innerWidth;
+                const mouseY = e.clientY / window.innerHeight;
+                
+                const tiltX = (mouseY - 0.5) * 2;
+                const tiltY = (mouseX - 0.5) * -2;
+                
+                nav.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+            });
+            
+            nav.addEventListener('mouseleave', () => {
+                nav.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+            });
+        }
+
+        // Initialize everything
+        document.addEventListener('DOMContentLoaded', () => {
+            // Event listeners
+            window.addEventListener('scroll', handleScroll);
+            
+            // Initialize features
+            smoothScroll();
+            
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 1000) {
+                    // Close mobile nav if open when resizing to desktop
+                    const mobileNav = document.querySelector('.mobile-nav');
+                    if (mobileNav.classList.contains('active')) {
+                        toggleNav();
+                    }
+                }
+            });
+        });
+
+        // Add keyboard navigation support
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const mobileNav = document.querySelector('.mobile-nav');
+                if (mobileNav.classList.contains('active')) {
+                    toggleNav();
+                }
+            }
+        });
+
+        
 
         console.log('Initializing AOS library');
         AOS.init({
@@ -933,6 +1203,50 @@ function toggleNav() {
                 });
             });
         }
+
+
+ // Smooth scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.content-section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Enhanced hover effects for interactive elements
+        document.querySelectorAll('.btn-primary, .btn-secondary').forEach(btn => {
+            btn.addEventListener('mouseenter', (e) => {
+                e.target.style.transform = 'translateY(-3px) scale(1.02)';
+            });
+            
+            btn.addEventListener('mouseleave', (e) => {
+                e.target.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Parallax effect for floating elements
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = scrolled * 0.5;
+            
+            document.querySelectorAll('.floating-element').forEach((element, index) => {
+                const speed = (index + 1) * 0.3;
+                element.style.transform = `translateY(${parallax * speed}px) rotate(${parallax * 0.1}deg)`;
+            });
+        });
+
+
+
 
         // Listen for the scroll event and adjust the animation delay
         window.addEventListener('scroll', setScrollBasedDelay);
