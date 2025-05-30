@@ -19,7 +19,7 @@
         <meta name="twitter:site" content="@axflo">
         <meta name="google-site-verification" content="YOUR_GOOGLE_SITE_VERIFICATION_CODE">
         <link rel="canonical" href="https://www.axfloo.com">
-        <link rel="icon" href="axflo.png" type="image/x-icon">
+        <link rel="icon" href="logo/AOGLogoWhite.png" type="image/x-icon">
         <link rel="apple-touch-icon" href="https://www.axfloo.com/axflo.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -54,8 +54,11 @@
     
   <header class="header">
         <nav class="nav">
-            <div class="nav__brand">
-                <img src="logo/AOGLogoWhite2.png" alt="Axflo logo">
+                <div class="nav__brand">
+                <!-- Light logo for transparent background -->
+                <img src="logo/AOGLogoWhite2.png" alt="Light Logo" class="logo-light">
+                <!-- Dark logo for white background -->
+                <img src="logo/AOGLogoBlack2.png" alt="Dark Logo" class="logo-dark">
             </div>
             <ul class="nav__links">
                 <li><a href="#">Home</a></li>
@@ -846,26 +849,107 @@
             </div>
         </div>
     </section>
- 
+
+
+
+     <section class="certifications-section">
+        <!-- Floating Background Icons -->
+        <div class="floating-icon">🏆</div>
+        <div class="floating-icon">🎖️</div>
+        <div class="floating-icon">⭐</div>
+
+        <div class="certifications-container">
+            <!-- Left Side: Content -->
+            <div class="certifications-content">
+                <div class="section-badge">
+                    Quality Assured
+                </div>
+                
+                <h2>
+                    Our <span class="highlight">Certifications</span><br>
+                    Excellence
+                </h2>
+                
+                <p>
+                    We are committed to maintaining the highest standards of quality and environmental responsibility. Our internationally recognized certifications demonstrate our dedication to excellence in service delivery and sustainable business practices.
+                </p>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">ISO Standards</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Compliance</div>
+                    </div>
+                </div>
+
+                <div class="learn-more-btn">
+                    <a href="#quality-policy">
+                        Learn More About Our Quality Policy
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side: Certifications Showcase -->
+            <div class="certifications-showcase">
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-logo">ISO</div>
+                        <div class="cert-status">Active</div>
+                    </div>
+                    <div class="cert-title">ISO 9001:2015</div>
+                    <div class="cert-description">
+                        Quality Management Systems certification ensuring consistent quality in our products and services through systematic process management and continuous improvement.
+                    </div>
+                    <div class="cert-details">
+                        <div class="cert-date">Valid Until 2027</div>
+                        <button class="download-btn">Download Certificate</button>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-logo">ISO</div>
+                        <div class="cert-status">Active</div>
+                    </div>
+                    <div class="cert-title">ISO 14001:2015</div>
+                    <div class="cert-description">
+                        Environmental Management Systems certification demonstrating our commitment to reducing environmental impact and promoting sustainable business practices.
+                    </div>
+                    <div class="cert-details">
+                        <div class="cert-date">Valid Until 2027</div>
+                        <button class="download-btn">Download Certificate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
 
 <section class="trusted-section" id="clients">
     <!-- Parallax Background Circles -->
-    <div class="background-circles" aria-hidden="true">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-    </div>
+       <div class="background-elements" aria-hidden="true">
+            <div class="grid-overlay"></div>
+            <div class="floating-orb"></div>
+            <div class="floating-orb"></div>
+            <div class="floating-orb"></div>
+            <div class="floating-orb"></div>
+            <div class="floating-orb"></div>
+        </div>
 
-    <h2 class="trusted-title animated-heading">
-        <span>T</span><span>R</span><span>U</span><span>S</span><span>T</span><span>E</span><span>D</span>
-        <span>B</span><span>Y</span>
-        <span>V</span><span>I</span><span>S</span><span>I</span><span>O</span><span>N</span><span>A</span><span>R</span><span>I</span><span>E</span><span>S</span>
-    </h2>
-    <p class="trusted-subtitle" data-aos="fade-up" data-aos-delay="200">
-        Empowering forward-thinking brands with sustainable innovation
-    </p>
+        <h2 class="trusted-title">
+            <span>T</span><span>r</span><span>u</span><span>s</span><span>t</span><span>e</span><span>d</span>
+            <span> </span><span>b</span><span>y</span>
+            <span> </span><span>V</span><span>i</span><span>s</span><span>i</span><span>o</span><span>n</span><span>a</span><span>r</span><span>i</span><span>e</span><span>s</span>
+        </h2>
+        
+        <p class="trusted-subtitle">
+            Empowering forward-thinking brands with sustainable innovation and cutting-edge solutions that drive meaningful impact across industries
+        </p>
+
 
     <div class="logos-container" data-aos="fade-up" data-aos-delay="400">
         <div class="logos-slider">
@@ -941,234 +1025,251 @@
         </div>
     </div>
 </section>
+ <section class="contact-section" id="contact">
+        <!-- Floating Background Shapes -->
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
 
+        <!-- Enhanced Map Marker -->
+        <div class="map-marker" title="Corporate Head Office - Port Harcourt, Nigeria">
+            <div class="marker-pulse"></div>
+            <div class="marker-dot"></div>
+        </div>
 
-<section class="contact-section"  data-aos="fade-up" id="contact">
-
-   
-    <!-- Map Overlay -->
-    <div class="map-overlay"></div>
-    <!-- Map Marker -->
-    <div class="map-marker" title="Corporate Head Office"></div>
-    <!-- Contact Information -->
-    <div class="contact-info">
-           <h2>
-                <span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span><span>&nbsp;</span><span>U</span><span>s</span>
-           </h2>
-        <div class="info-container">
-            <!-- Location Section -->
-            <div class="location">
-                <div class="manage">
-                <h3><i class="fas fa-building"></i> Corporate Head Office</h3>
-                </div>
-                <p>48 Wogu Street, D/Line, Port Harcourt<br>Rivers State, Nigeria</p>
-                <p><i class="fas fa-phone-alt"></i> Tel: +234-84-79 77 49 | Fax: +234-1-460 2108</p>
-                <p><i class="fas fa-envelope"></i> E-mail: <a href="mailto:info@axfloo.com">info@axfloo.com</a></p>
+        <!-- Main Content Container -->
+        <div class="contact-container">
+            <!-- Enhanced Header -->
+            <div class="contact-header">
+                <h2>Contact Us</h2>
+                <p class="contact-subtitle">Connect with our team of professionals and discover how we can help transform your business</p>
             </div>
-            <!-- Management Section -->
-            <div class="management">
-                <div class="manage">
-                    <h3><i class="fas fa-users"></i> Management</h3>
+
+            <!-- Content Grid -->
+            <div class="contact-content">
+                <!-- Location & Contact Information -->
+                <div class="contact-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="card-title">Corporate Head Office</h3>
+                    </div>
+                    
+                    <div class="location-info">
+                        <div class="address">
+                            48 Wogu Street, D/Line<br>
+                            Port Harcourt, Rivers State<br>
+                            Nigeria
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>Tel: +234-84-79 77 49</span>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-fax"></i>
+                            <span>Fax: +234-1-460 2108</span>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@axfloo.com">info@axfloo.com</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="manager">
-                    <p><strong>Donald T Brown</strong><br>Managing Director/CEO<br><i class="fas fa-phone-alt"></i> Tel: +234 (0) 803 471 6831<br><i class="fas fa-envelope"></i> E-mail: <a href="mailto:Donald.Brown@axfloo.com">Donald.Brown@axfloo.com</a></p>
-                </div>
-                <div class="manager">
-                    <p><strong>Rosemary Iguodala (Mrs)</strong><br>Head, Human Resources & Admin<br><i class="fas fa-phone-alt"></i> Tel: +234 (0) 803 340 3095<br><i class="fas fa-envelope"></i> E-mail: <a href="mailto:rosemary.iguodala@axfloo.com">rosemary.iguodala@axfloo.com</a></p>
-                </div>
-                <div class="manager">
-                    <p><strong>Jennifer Ifeoma Uzorka</strong><br>Finance Officer<br><i class="fas fa-phone-alt"></i> Tel: +234 (0) 810 681 4161<br><i class="fas fa-envelope"></i> E-mail: <a href="mailto:jennifer.uzorka@axfloo.com">jennifer.uzorka@axfloo.com</a></p>
-                </div>
-                <div class="manager">
-                    <p><strong>Ephraim N Ishaka</strong><br>Operations<br><i class="fas fa-phone-alt"></i> Tel: +234 (0) 806 418 1561<br><i class="fas fa-envelope"></i> E-mail: <a href="mailto:Ephraim.ishaka@axfloo.com">Ephraim.ishaka@axfloo.com</a></p>
-                </div>
-                <div class="manager">
-                    <p><strong>Chidi Amadi</strong><br>Director<br><i class="fas fa-phone-alt"></i> Tel: +234 (0) 803 310 2037<br><i class="fas fa-envelope"></i> E-mail: <a href="mailto:Chidi.Amadi@axfloo.com">Chidi.Amadi@axfloo.com</a></p>
+
+                <!-- Management Team -->
+                <div class="contact-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="card-title">Leadership Team</h3>
+                    </div>
+                    
+                    <div class="management-grid">
+                        <div class="manager-card">
+                            <div class="manager-name">Donald T Brown</div>
+                            <div class="manager-title">Managing Director/CEO</div>
+                            <div class="manager-contact">
+                                <div class="manager-contact-item">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>+234 (0) 803 471 6831</span>
+                                </div>
+                                <div class="manager-contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:Donald.Brown@axfloo.com">Donald.Brown@axfloo.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="manager-card">
+                            <div class="manager-name">Rosemary Iguodala (Mrs)</div>
+                            <div class="manager-title">Head, Human Resources & Admin</div>
+                            <div class="manager-contact">
+                                <div class="manager-contact-item">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>+234 (0) 803 340 3095</span>
+                                </div>
+                                <div class="manager-contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:rosemary.iguodala@axfloo.com">rosemary.iguodala@axfloo.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="manager-card">
+                            <div class="manager-name">Jennifer Ifeoma Uzorka</div>
+                            <div class="manager-title">Finance Officer</div>
+                            <div class="manager-contact">
+                                <div class="manager-contact-item">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>+234 (0) 810 681 4161</span>
+                                </div>
+                                <div class="manager-contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:jennifer.uzorka@axfloo.com">jennifer.uzorka@axfloo.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="manager-card">
+                            <div class="manager-name">Ephraim N Ishaka</div>
+                            <div class="manager-title">Operations Manager</div>
+                            <div class="manager-contact">
+                                <div class="manager-contact-item">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>+234 (0) 806 418 1561</span>
+                                </div>
+                                <div class="manager-contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:Ephraim.ishaka@axfloo.com">Ephraim.ishaka@axfloo.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="manager-card">
+                            <div class="manager-name">Chidi Amadi</div>
+                            <div class="manager-title">Director</div>
+                            <div class="manager-contact">
+                                <div class="manager-contact-item">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>+234 (0) 803 310 2037</span>
+                                </div>
+                                <div class="manager-contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:Chidi.Amadi@axfloo.com">Chidi.Amadi@axfloo.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-</section>
+    
+    <footer class="footer-section">
+        <div class="footer-container">
+            <!-- Enhanced Footer Branding -->
+            <div class="footer-brand">
+                <img src="logo/AOGLogoWhite2.png" alt="Axflo Logo" class="footer-logo">
+                <p>Empowering businesses with innovative solutions and cutting-edge technology. We transform ideas into powerful digital experiences that drive growth and success.</p>
+                
+                <div class="company-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years</span>
+                    </div>
+                </div>
+            </div>
 
-<footer class="footer-section" >
-    <div class="footer-container">
-        <!-- Footer Branding -->
-        <div class="footer-brand">
-            <img src="axflo.png" alt="Axflo Logo" class="footer-logo">
-            <p>Empowering Your Business with Innovative Solutions.</p>
-        </div>
-        <!-- Footer Links -->
-        <div class="footer-links footer_display">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        <!-- Social Media Icons -->
-        <div class="footer-social">
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <!-- Enhanced Footer Links -->
+            <div class="footer-links footer_display">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Enhanced Social Media & Newsletter -->
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+
+                <div class="newsletter-signup">
+                    <h4>Stay Updated</h4>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" aria-label="Email address">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- Enhanced Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Axflo. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ultra Modern Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <button class="back-to-top-btn" onclick="scrollToTop()" aria-label="Back to top">
+            <svg class="progress-ring">
+                <circle class="progress-ring-circle" cx="30" cy="30" r="28"></circle>
+            </svg>
+            <svg viewBox="0 0 384 512" class="back-to-top-icon">
+                <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path>
+            </svg>
+        </button>
     </div>
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
-        <p>&copy; 2025 Axflo. All rights reserved.</p>
-    </div>
-</footer>
- 
-<div class="back-to-top" id="backToTop">
-    <button class="button" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-        <svg viewBox="0 0 384 512" class="svgIcon">
-            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path>
-        </svg>
-    </button>
-</div>
+    <script src="main.js"></script>
 <script
     src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0-beta3/js/all.min.js"
 
 ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-  // Enhanced Navigation Toggle
-        function toggleNav() {
-            const mobileNav = document.querySelector('.mobile-nav');
-            const toggleBtn = document.querySelector('.toggle-btn');
-            const overlay = document.querySelector('.overlay');
-            
-            const isActive = mobileNav.classList.contains('active');
-            
-            if (!isActive) {
-                mobileNav.classList.add('active');
-                toggleBtn.classList.add('active');
-                overlay.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            } else {
-                mobileNav.classList.remove('active');
-                toggleBtn.classList.remove('active');
-                overlay.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        }
-
-        // Enhanced Scroll Handler - Original Logic
-        function handleScroll() {
-            const header = document.querySelector('.header');
-            const navLinks = document.querySelectorAll('.nav__links a');
-            const navAction = document.querySelector('.nav__action a');
-            
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-                // Change link colors to black
-                navLinks.forEach(link => {
-                    link.style.color = '#000';
-                });
-                // Change action button colors
-                if (navAction) {
-                    navAction.style.color = '#000';
-                    navAction.style.borderColor = '#FFD700';
-                }
-            } else {
-                header.classList.remove('scrolled');
-                // Revert link colors to white
-                navLinks.forEach(link => {
-                    link.style.color = '#fff';
-                });
-                // Revert action button colors
-                if (navAction) {
-                    navAction.style.color = '#ffcc00';
-                    navAction.style.borderColor = '#ffcc00';
-                }
-            }
-        }
-
-        // Smooth scroll for anchor links
-        function smoothScroll() {
-            const links = document.querySelectorAll('a[href^="#"]');
-            
-            links.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    
-                    const targetId = link.getAttribute('href');
-                    if (targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        const offsetTop = targetElement.offsetTop - 120;
-                        
-                        window.scrollTo({
-                            top: offsetTop,
-                            behavior: 'smooth'
-                        });
-                        
-                        // Close mobile nav if open
-                        if (document.querySelector('.mobile-nav').classList.contains('active')) {
-                            toggleNav();
-                        }
-                    }
-                });
-            });
-        }
-
-        // Mouse parallax effect for navbar
-        function addParallaxEffect() {
-            const nav = document.querySelector('.nav');
-            
-            document.addEventListener('mousemove', (e) => {
-                const mouseX = e.clientX / window.innerWidth;
-                const mouseY = e.clientY / window.innerHeight;
-                
-                const tiltX = (mouseY - 0.5) * 2;
-                const tiltY = (mouseX - 0.5) * -2;
-                
-                nav.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
-            });
-            
-            nav.addEventListener('mouseleave', () => {
-                nav.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
-            });
-        }
-
-        // Initialize everything
-        document.addEventListener('DOMContentLoaded', () => {
-            // Event listeners
-            window.addEventListener('scroll', handleScroll);
-            
-            // Initialize features
-            smoothScroll();
-            
-            // Handle window resize
-            window.addEventListener('resize', () => {
-                if (window.innerWidth > 1000) {
-                    // Close mobile nav if open when resizing to desktop
-                    const mobileNav = document.querySelector('.mobile-nav');
-                    if (mobileNav.classList.contains('active')) {
-                        toggleNav();
-                    }
-                }
-            });
-        });
-
-        // Add keyboard navigation support
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                const mobileNav = document.querySelector('.mobile-nav');
-                if (mobileNav.classList.contains('active')) {
-                    toggleNav();
-                }
-            }
-        });
-
-        
+    <script> // Enhanced Navigation Toggle with Animation States
+      
 
         console.log('Initializing AOS library');
         AOS.init({
@@ -1204,8 +1305,7 @@
             });
         }
 
-
- // Smooth scroll reveal animation
+   // Enhanced scroll animations with Intersection Observer
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -1219,31 +1319,29 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.content-section').forEach(section => {
-            observer.observe(section);
+        // Observe animated elements
+        document.querySelectorAll('.trusted-title span, .trusted-subtitle, .logos-container').forEach(el => {
+            observer.observe(el);
         });
 
-        // Enhanced hover effects for interactive elements
-        document.querySelectorAll('.btn-primary, .btn-secondary').forEach(btn => {
-            btn.addEventListener('mouseenter', (e) => {
-                e.target.style.transform = 'translateY(-3px) scale(1.02)';
+        // Add smooth hover effects for logo items
+        document.querySelectorAll('.logo-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.style.transform = 'translateY(-8px) scale(1.05)';
             });
             
-            btn.addEventListener('mouseleave', (e) => {
-                e.target.style.transform = 'translateY(0) scale(1)';
+            item.addEventListener('mouseleave', () => {
+                item.style.transform = 'translateY(0) scale(1)';
             });
         });
 
-        // Parallax effect for floating elements
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallax = scrolled * 0.5;
-            
-            document.querySelectorAll('.floating-element').forEach((element, index) => {
-                const speed = (index + 1) * 0.3;
-                element.style.transform = `translateY(${parallax * speed}px) rotate(${parallax * 0.1}deg)`;
-            });
-        });
+        // Performance optimization for animations
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        
+        if (prefersReducedMotion.matches) {
+            document.documentElement.style.setProperty('--transition-smooth', 'none');
+            document.documentElement.style.setProperty('--transition-bounce', 'none');
+        }
 
 
 
@@ -1281,65 +1379,129 @@
     });
 });
 
-(function() {
-    const container = document.getElementById('certificationsContainer');
-    // Clone items for infinite scroll
-    const cloneItems = () => {
-      const items = [...container.children];
-      items.forEach((item) => {
-          const clone = item.cloneNode(true);
-          container.appendChild(clone);
-      });
-    };
+ // Enhanced interactions and animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Parallax effect for floating icons
+            const floatingIcons = document.querySelectorAll('.floating-icon');
+            
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                floatingIcons.forEach((icon, index) => {
+                    const rate = scrolled * (0.5 + index * 0.1);
+                    icon.style.transform = `translateY(${rate}px) rotate(${rate * 0.1}deg)`;
+                });
+            });
 
-    cloneItems(); // Duplicate once
+            // Add click interactions for download buttons
+            const downloadBtns = document.querySelectorAll('.download-btn');
+            downloadBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Add ripple effect
+                    const ripple = document.createElement('span');
+                    ripple.style.cssText = `
+                        position: absolute;
+                        background: rgba(255, 255, 255, 0.6);
+                        border-radius: 50%;
+                        width: 100px;
+                        height: 100px;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%) scale(0);
+                        animation: ripple 0.6s ease-out;
+                        pointer-events: none;
+                    `;
+                    
+                    this.style.position = 'relative';
+                    this.style.overflow = 'hidden';
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => ripple.remove(), 600);
+                    
+                    // Simulate download
+                    console.log('Downloading certificate...');
+                });
+            });
 
-    let scrollSpeed = 0.3; // px per frame (adjust as needed)
-    let scrollPos = 0;
+            // Add hover effects for certification cards
+            const certCards = document.querySelectorAll('.certification-card');
+            certCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        });
 
-    function animateScroll() {
-      scrollPos += scrollSpeed;
-      container.scrollTop = scrollPos;
+        // Add CSS for ripple animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: translate(-50%, -50%) scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
 
-      // singleSetHeight: height of original item set
-      const singleSetHeight =
-        container.children[0].offsetHeight *
-        (container.children.length / 2);
+   // Enhanced Back to Top functionality with progress indicator
+        const backToTopBtn = document.getElementById('backToTop');
+        const progressRing = document.querySelector('.progress-ring-circle');
+        const circumference = 2 * Math.PI * 28; // radius = 28
 
-      if (scrollPos >= singleSetHeight) {
-        scrollPos = 0;
-        container.scrollTop = 0;
-      }
-      requestAnimationFrame(animateScroll);
-    }
+        progressRing.style.strokeDasharray = circumference;
+        progressRing.style.strokeDashoffset = circumference;
 
-    requestAnimationFrame(animateScroll);
-  })();
+        function updateScrollProgress() {
+            const scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollCurrent = window.pageYOffset;
+            const scrollPercentage = scrollCurrent / scrollTotal;
+            
+            const offset = circumference - (scrollPercentage * circumference);
+            progressRing.style.strokeDashoffset = offset;
 
-// Example JavaScript for smooth scrolling
-document.querySelectorAll('.footer-links a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
+            // Show/hide button based on scroll position
+            if (scrollCurrent > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
                 behavior: 'smooth'
             });
         }
-    });
-});
 
+        // Throttled scroll listener for better performance
+        let ticking = false;
+        function handleScroll() {
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    updateScrollProgress();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }
 
-const backToTop = document.getElementById('backToTop');
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 200) {
-        backToTop.style.display = 'block';
-    } else {
-        backToTop.style.display = 'none';
-    }
-});
-
+        window.addEventListener('scroll', handleScroll);
+        
+        // Newsletter form handling
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            if (email) {
+                // Add your newsletter subscription logic here
+                alert('Thank you for subscribing!');
+                this.querySelector('input[type="email"]').value = '';
+            }
+        });
 
 
 
