@@ -1600,12 +1600,19 @@ About Section
             margin-bottom: 1.5rem;
         }
 
+ 
         .cert-details {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
+        .cert-details a{
+            color: var(--primary-gold);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition-smooth);
+        }
         .cert-date {
             font-size: 0.75rem;
             color: var(--text-tertiary);
@@ -1639,6 +1646,7 @@ About Section
             content: '📥';
             font-size: 1rem;
         }
+
 
         /* Floating Elements */
         .floating-icon {
