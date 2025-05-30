@@ -240,7 +240,7 @@ html {
         }
 
         .toggle-btn.active span:nth-child(1) {
-            transform: rotate(45deg) translate(7px, 7px);
+            transform: rotate(45deg) translate(5px, 5px);
         }
 
         .toggle-btn.active span:nth-child(2) {
@@ -249,7 +249,7 @@ html {
         }
 
         .toggle-btn.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -7px);
+            transform: rotate(-45deg) translate(5px, -5px);
         }
 
         /* Mobile Slide Modal */
@@ -374,33 +374,7 @@ html {
             visibility: visible;
         }
 
-        /* Demo Content */
-        .demo-content {
-            margin-top: 150px;
-            padding: 4rem 2rem;
-            text-align: center;
-            color: white;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .demo-content h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
-            background: linear-gradient(135deg, #fff, var(--primary-gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .demo-content p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            opacity: 0.9;
-            margin-bottom: 4rem;
-        }
+  
 
         /* Responsive Design */
         @media (max-width: 1000px) {
