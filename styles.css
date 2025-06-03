@@ -3282,6 +3282,10 @@ About Section
             .value-title {
                 font-size: 1.25rem;
             }
+
+            .values-header h2{
+                font-size: 2.2rem;
+            }
         }
 
     
@@ -4620,6 +4624,10 @@ About Section
             
             .logos-slider {
                 gap: 30px;
+            }
+
+            .trusted-title{
+                font-size: clamp(2rem, 5vw, 3rem);
             }
         }
 

@@ -62,11 +62,11 @@
             </div>
             <ul class="nav__links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#careers">Careers</a></li>
                 <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -90,11 +90,11 @@
         </div>
         <ul class="mobile-nav__links">
             <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="#about"><i class="fas fa-users"></i>About Us</a></li>
+            <li><a href="about.html"><i class="fas fa-users"></i>About Us</a></li>
             <li><a href="#news"><i class="fas fa-newspaper"></i>News</a></li>
             <li><a href="#careers"><i class="fas fa-briefcase"></i>Careers</a></li>
             <li><a href="#achievements"><i class="fas fa-trophy"></i>Achievements</a></li>
-            <li><a href="#services"><i class="fas fa-cogs"></i>Services</a></li>
+            <li><a href="services.html"><i class="fas fa-cogs"></i>Services</a></li>
             <li><a href="#certifications"><i class="fas fa-certificate"></i>Certifications</a></li>
             <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
         </ul>
@@ -1377,6 +1377,32 @@
     animatedHeadings.forEach(heading => {
         observer.observe(heading);
     });
+});
+
+ // Navigation background change on scroll with link color changes
+window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    const navLinks = document.querySelectorAll('nav a'); // Select all links in nav
+    
+    if (window.scrollY > 100) {
+        // Scrolled state - solid background with black links
+        nav.style.background = 'rgba(250, 250, 250, 0.95)';
+        nav.style.borderBottom = '1px solid rgba(214, 160, 25, 0.2)';
+        
+        // Make links black when scrolled
+        navLinks.forEach(link => {
+            link.style.color = '#000000';
+        });
+    } else {
+        // Top of page - transparent background with white links
+        nav.style.background = 'rgba(250, 250, 250, 0.1)';
+        nav.style.borderBottom = '1px solid rgba(214, 160, 25, 0.1)';
+        
+        // Make links white when at top
+        navLinks.forEach(link => {
+            link.style.color = '#ffffff';
+        });
+    }
 });
 
  // Enhanced interactions and animations

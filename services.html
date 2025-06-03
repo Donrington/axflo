@@ -18,12 +18,12 @@
     <meta name="twitter:site" content="@axflo">
     <meta name="google-site-verification" content="YOUR_GOOGLE_SITE_VERIFICATION_CODE">
     <link rel="canonical" href="https://www.axfloo.com">
-    <link rel="icon" href="axflo.png" type="image/x-icon">
+    <link rel="icon" href="logo/AOGLogoWhite.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="https://www.axfloo.com/axflo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Varela&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Epilogue:ital,wght@0,100..900;1,100&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rosario:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="services.css">
     <script type="application/ld+json">
         {
@@ -48,18 +48,21 @@
     <title>Services Axflo Oil & Gas Nig Ltd</title>
 </head>
 <body>
-    <header class="header">
+  <header class="header">
         <nav class="nav">
-            <div class="nav__brand" data-aos="fade-right">
-                <img src="axflo.png" alt="Axflo logo">
+                <div class="nav__brand">
+                <!-- Light logo for transparent background -->
+                <img src="logo/AOGLogoWhite2.png" alt="Light Logo" class="logo-light">
+                <!-- Dark logo for white background -->
+                <img src="logo/AOGLogoBlack2.png" alt="Dark Logo" class="logo-dark">
             </div>
             <ul class="nav__links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#careers">Careers</a></li>
                 <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -67,13 +70,41 @@
                 <a href="tel:+123456789">Call Us</a>
             </div>
         </nav>
-        <!-- Toggle button outside of nav -->
-        <div class="toggle-btn" onclick="toggleNav()" aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
     </header>
+
+        <!-- Mobile Toggle Button -->
+    <div class="toggle-btn" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Mobile Slide Modal -->
+    <div class="mobile-nav">
+        <div class="mobile-nav__header">
+            <img src="logo/AOGLogoWhite2.png" alt="Axflo logo">
+        </div>
+        <ul class="mobile-nav__links">
+            <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="about.html"><i class="fas fa-users"></i>About Us</a></li>
+            <li><a href="#news"><i class="fas fa-newspaper"></i>News</a></li>
+            <li><a href="#careers"><i class="fas fa-briefcase"></i>Careers</a></li>
+            <li><a href="#achievements"><i class="fas fa-trophy"></i>Achievements</a></li>
+            <li><a href="services.html"><i class="fas fa-cogs"></i>Services</a></li>
+            <li><a href="#certifications"><i class="fas fa-certificate"></i>Certifications</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+        </ul>
+        <div class="mobile-nav__action">
+            <a href="tel:+123456789">
+                <i class="fas fa-phone"></i>
+                Call Us Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" onclick="toggleNav()"></div>
+
 
     
     <div class="background-circles">
@@ -85,127 +116,440 @@
       </div>
     
 
-    <!-- Parallax Header Section -->
-    <section class="parallax-header">
-        <div class="parallax-overlay"></div>
-        <div class="parallax-content" data-aos="fade-up">
-            <h1>Our Services</h1>
-            <p class="subtitle">Empowering Industries with Advanced Solutions</p>
-            <p class="header-text">
-                Axflo Oil & Gas offers a range of innovative services that prioritize safety, sustainability, and operational excellence.
+
+    <section class="about-hero">
+        <!-- Dynamic Background -->
+        <div class="hero-background"></div>
+        
+        <!-- Animated Grid -->
+        <div class="grid-overlay"></div>
+        
+        <!-- Floating Geometric Elements -->
+        <div class="geometric-elements">
+            <div class="geometric-shape shape-1"></div>
+            <div class="geometric-shape shape-2"></div>
+            <div class="geometric-shape shape-3"></div>
+        </div>
+        
+        <!-- Glass Accent -->
+        <div class="glass-accent"></div>
+        
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <!-- Status Badge -->
+            <div class="status-badge">
+                <div class="status-dot"></div>
+               Empowering Industries with Advanced Solutions
+            </div>
+            
+            <!-- Hero Title -->
+            <h1 class="hero-title">Our Services</h1>
+            
+            <!-- Hero Subtitle -->
+            <p class="hero-subtitle">
+             Axflo Oil & Gas offers a range of innovative services that prioritize safety, sustainability, and operational excellence.
             </p>
+            
+            <!-- CTA Button -->
+            <a href="#mission" class="cta-button">
+                Explore Our Services
+                <svg class="cta-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
         </div>
     </section>
-<!-- Services Sections -->
-<section class="section-layout service-section" data-aos="fade-up">
-    <div class="grid-container">
-        <div class="text-content">
-            <h2>Oil Spill Equipment</h2>
-            <p>
-                Axflo Oil & Gas provides cutting-edge oil spill response equipment tailored for rapid deployment in diverse marine, coastal, and onshore environments. Our inventory includes containment booms, high-efficiency oil skimmers, sorbent pads, oil-water separators, and high-capacity vacuum trucks.
-                <br><br>
-                Designed to minimize ecological damage and accelerate recovery efforts, our equipment adheres to ISO 14001:2015 environmental management standards. We ensure reliability by conducting regular inspections, maintenance, and readiness drills, enabling clients to execute effective spill response operations without delays.
-            </p>
-        </div>
-        <div class="image-content">
-            <img src="axflo/oilspillequip.jpg" alt="Oil Spill Equipment" />
-        </div>
+
+
+
+
+
+
+
+ <div class="bg-animation">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
     </div>
-</section>
 
-<section class="section-layout service-section reverse" data-aos="fade-up">
-    <div class="grid-container">
-        <div class="text-content">
-            <h2>Test-Running Hydraulic Power Packs</h2>
-            <p>
-                Hydraulic power packs are a vital component of oil spill response and industrial operations, supplying high-pressure hydraulic energy for containment and recovery equipment. At Axflo, we conduct comprehensive testing and commissioning to ensure peak performance and reliability under extreme operating conditions.
-                <br><br>
-                Our testing process involves load simulations, pressure calibration, thermal stress evaluation, and efficiency analysis, guaranteeing seamless integration with various hydraulic skimmers, boom deployment systems, and industrial containment units. By adhering to OEM guidelines and industry best practices, we extend equipment lifespan and prevent system failures during critical response operations.
-            </p>
-        </div>
-        <div class="image-content">
-            <img src="axflo/axflo11.jpg" alt="Hydraulic Power Packs" />
-        </div>
+    <div class="main-container">
+        <!-- Oil Spill Equipment Section -->
+        <section class="service-section section-light fade-in">
+            <div class="service-grid">
+                <div class="service-content">
+                    <div class="service-badge">Advanced Technology</div>
+                    <h2 class="service-title">Oil Spill Equipment</h2>
+                    <p class="service-description">
+                        Axflo Oil & Gas delivers next-generation oil spill response equipment engineered for rapid deployment across diverse marine, coastal, and onshore environments. Our comprehensive inventory includes advanced containment booms, high-efficiency oil skimmers, specialized sorbent pads, oil-water separators, and high-capacity vacuum trucks.
+                    </p>
+                    <div class="tech-specs">
+                        <h4>Technical Specifications</h4>
+                        <ul class="specs-list">
+                            <li>ISO 14001:2015 Environmental Management Compliance</li>
+                            <li>Deployment Time: &lt;15 minutes for emergency response</li>
+                            <li>Operating Temperature Range: -40°C to +60°C</li>
+                            <li>Recovery Efficiency: Up to 95% oil-water separation</li>
+                            <li>Real-time Monitoring & IoT Integration</li>
+                        </ul>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">Reliability Rate</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Response Ready</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Successful Deployments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-image">
+                    <img src="axflo/oilspillequip.jpg" alt="Oil Spill Equipment">
+                    <div class="image-overlay">
+                        <h3>Cutting-Edge Response Technology</h3>
+                        <p>State-of-the-art equipment designed for maximum efficiency and minimal environmental impact.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hydraulic Power Packs Section -->
+        <section class="service-section section-dark fade-in">
+            <div class="service-grid reverse">
+                <div class="service-content">
+                    <div class="service-badge">Precision Engineering</div>
+                    <h2 class="service-title">Hydraulic Power Systems</h2>
+                    <p class="service-description">
+                        Hydraulic power packs represent the critical backbone of oil spill response and industrial operations, delivering high-pressure hydraulic energy for containment and recovery systems. Our comprehensive testing and commissioning protocols ensure peak performance under extreme operational conditions.
+                    </p>
+                    <div class="tech-specs">
+                        <h4>Advanced Testing Protocols</h4>
+                        <ul class="specs-list">
+                            <li>Multi-stage Load Simulation Testing</li>
+                            <li>Precision Pressure Calibration (±0.1% accuracy)</li>
+                            <li>Thermal Stress Evaluation (-40°C to +80°C)</li>
+                            <li>Efficiency Analysis & Performance Optimization</li>
+                            <li>Vibration & Acoustic Testing</li>
+                            <li>Predictive Maintenance Integration</li>
+                        </ul>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">10,000+</span>
+                            <span class="stat-label">Test Hours</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">First-Pass Success</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">25</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-image">
+                    <img src="axflo/axflo11.jpg" alt="Hydraulic Power Packs">
+                    <div class="image-overlay">
+                        <h3>Industrial-Grade Performance</h3>
+                        <p>Rigorous testing ensures optimal performance in critical response scenarios.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NAOC Brass Terminal Section -->
+        <section class="service-section section-light fade-in">
+            <div class="service-grid">
+                <div class="service-content">
+                    <div class="service-badge">Strategic Partnership</div>
+                    <h2 class="service-title">NAOC Brass Terminal Operations</h2>
+                    <p class="service-description">
+                        Our comprehensive spill response services at the NAOC Brass Terminal represent a cornerstone of environmental safety in crude oil barging and transportation operations. We provide end-to-end solutions including pre-incident planning, active containment measures, emergency response mobilization, and post-spill remediation.
+                    </p>
+                    <div class="tech-specs">
+                        <h4>Operational Excellence</h4>
+                        <ul class="specs-list">
+                            <li>Advanced Skimming Systems (200+ bbl/hr capacity)</li>
+                            <li>Precision Dispersant Application Units</li>
+                            <li>Multi-layer Oil Containment Boom Arrays</li>
+                            <li>Real-time Environmental Monitoring</li>
+                            <li>Aerial Surveillance & Drone Integration</li>
+                            <li>Emergency Response Time: &lt;30 minutes</li>
+                        </ul>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">Zero</span>
+                            <span class="stat-label">Major Incidents</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15min</span>
+                            <span class="stat-label">Avg Response Time</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Compliance Rate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-image">
+                    <img src="axflo/axflo22.jpg" alt="Terminal Operations">
+                    <div class="image-overlay">
+                        <h3>Critical Infrastructure Protection</h3>
+                        <p>Safeguarding vital energy infrastructure through proactive response strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mangrove Restoration Section -->
+        <section class="service-section section-dark fade-in">
+            <div class="service-grid reverse">
+                <div class="service-content">
+                    <div class="service-badge">Environmental Impact</div>
+                    <h2 class="service-title">Mangrove Ecosystem Restoration</h2>
+                    <p class="service-description">
+                        Mangrove ecosystems serve as nature's first line of defense against coastal erosion and oil spill impacts. Our scientifically-driven restoration initiatives focus on habitat rehabilitation, carbon sequestration, erosion control, and biodiversity enhancement in oil-impacted regions.
+                    </p>
+                    <div class="tech-specs">
+                        <h4>Scientific Methodology</h4>
+                        <ul class="specs-list">
+                            <li>Advanced Soil Analysis & Hydrocarbon Assessment</li>
+                            <li>Species-specific Propagation Techniques</li>
+                            <li>Long-term Ecosystem Health Monitoring</li>
+                            <li>Carbon Credit Quantification & Verification</li>
+                            <li>Biodiversity Impact Assessment</li>
+                            <li>UN SDG Alignment & Reporting</li>
+                        </ul>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">50,000+</span>
+                            <span class="stat-label">Trees Planted</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">500</span>
+                            <span class="stat-label">Hectares Restored</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15</span>
+                            <span class="stat-label">Species Protected</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-image">
+                    <img src="axflo/axflo12.jpg" alt="Mangrove Restoration">
+                    <div class="image-overlay">
+                        <h3>Ecosystem Regeneration</h3>
+                        <p>Rebuilding nature's coastal defenses through scientific restoration methods.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fence Boom Installation Section -->
+        <section class="service-section section-light fade-in">
+            <div class="service-grid">
+                <div class="service-content">
+                    <div class="service-badge">Critical Infrastructure</div>
+                    <h2 class="service-title">Advanced Containment Systems</h2>
+                    <p class="service-description">
+                        Our specialized fence boom installations represent the critical first line of defense against oil spills in high-risk offshore environments. We engineer, deploy, and maintain heavy-duty containment barriers designed for long-term resilience in challenging marine conditions.
+                    </p>
+                    <div class="tech-specs">
+                        <h4>Engineering Specifications</h4>
+                        <ul class="specs-list">
+                            <li>High-Strength, UV-Resistant Materials</li>
+                            <li>Chemical Resistance: pH 2-12 tolerance</li>
+                            <li>Wave Height Tolerance: Up to 3.5 meters</li>
+                            <li>Current Resistance: 2.5 knots maximum</li>
+                            <li>Temperature Range: -20°C to +70°C</li>
+                            <li>Modular Design for Rapid Deployment</li>
+                        </ul>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">5km+</span>
+                            <span class="stat-label">Boom Deployed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">99.8%</span>
+                            <span class="stat-label">Containment Rate</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10</span>
+                            <span class="stat-label">Year Lifespan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800" alt="Fence Boom Installation">
+                    <div class="image-overlay">
+                        <h3>Marine Protection Barriers</h3>
+                        <p>Advanced containment technology protecting critical marine environments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spill Containment Section -->
+        <section class="service-section section-dark fade-in">
+            <div class="service-grid reverse">
+                <div class="service-content">
+                    <div class="service-badge">Emergency Response</div>
+                    <h2 class="service-title">Integrated Response Operations</h2>
+                    <p class="service-description">
+                        As industry leaders in spill containment and oil recovery operations, we deploy advanced containment strategies and cutting-edge hydrocarbon recovery techniques to minimize environmental impact and accelerate site remediation.
+                    </p>
+                    <div class="tech-specs">
+                        <h4>Advanced Recovery Systems</h4>
+                        <ul class="specs-list">
+                            <li>Multi-phase Containment & Recovery</li>
+                            <li>AI-Powered Spill Trajectory Modeling</li>
+                            <li>Aerial Surveillance & Real-time Monitoring</li>
+                            <li>High-Speed Skimmer Technology (500+ bbl/hr)</li>
+                            <li>Predictive Analytics for Optimal Response</li>
+                            <li>ISO 9001:2015 & ISO 14001:2015 Certified</li>
+                        </ul>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Emergency Response</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">Recovery Efficiency</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">120+</span>
+                            <span class="stat-label">Successful Operations</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1569163139394-de4e5f43e4e3?w=800" alt="Spill Containment and Recovery">
+                    <div class="image-overlay">
+                        <h3>Rapid Response Excellence</h3>
+                        <p>Advanced recovery systems minimizing environmental impact through precision operations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section fade-in">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Protect Your Operations?</h2>
+                <p class="service-description" style="margin-bottom: 3rem; color: var(--text-secondary);">
+                    Partner with industry leaders in oil spill response and environmental protection. Our advanced technologies and expert teams are ready to safeguard your operations 24/7.
+                </p>
+                <a href="#contact" class="cta-button">
+                    Contact Our Experts
+                </a>
+            </div>
+        </section>
     </div>
-</section>
 
-<section class="section-layout service-section" data-aos="fade-up">
-    <div class="grid-container">
-        <div class="text-content">
-            <h2>Spill Response Cover for NAOC Brass Terminal</h2>
-            <p>
-                As part of our commitment to environmental safety, Axflo provides comprehensive spill response services at the NAOC Brass Terminal, a key hub for crude oil barging and transportation. Our services include pre-incident planning, active containment measures, emergency spill response mobilization, and post-spill remediation.
-                <br><br>
-                Utilizing state-of-the-art skimming systems, dispersant application units, and oil containment booms, our trained response teams mitigate the risks associated with offshore loading, transfer operations, and pipeline leaks. Our expertise in rapid response minimizes downtime, operational disruptions, and environmental liabilities for our clients.
-            </p>
+
+
+
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <!-- Enhanced Footer Branding -->
+            <div class="footer-brand">
+                <img src="logo/AOGLogoWhite2.png" alt="Axflo Logo" class="footer-logo">
+                <p>Empowering businesses with innovative solutions and cutting-edge technology. We transform ideas into powerful digital experiences that drive growth and success.</p>
+                
+                <div class="company-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Footer Links -->
+            <div class="footer-links footer_display">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Enhanced Social Media & Newsletter -->
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+
+                <div class="newsletter-signup">
+                    <h4>Stay Updated</h4>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" aria-label="Email address">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="image-content">
-            <img src="axflo/axflo22.jpg" alt="Spill Response Cover" />
+
+        <!-- Enhanced Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Axflo. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
         </div>
+    </footer>
+
+    <!-- Ultra Modern Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <button class="back-to-top-btn" onclick="scrollToTop()" aria-label="Back to top">
+            <svg class="progress-ring">
+                <circle class="progress-ring-circle" cx="30" cy="30" r="28"></circle>
+            </svg>
+            <svg viewBox="0 0 384 512" class="back-to-top-icon">
+                <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path>
+            </svg>
+        </button>
     </div>
-</section>
-
-<section class="section-layout service-section reverse" data-aos="fade-up">
-    <div class="grid-container">
-        <div class="text-content">
-            <h2>Mangrove Planting and Restoration</h2>
-            <p>
-                Mangroves serve as natural coastal barriers that protect marine ecosystems from the impact of oil spills and industrial activities. Axflo’s mangrove restoration initiatives focus on habitat rehabilitation, erosion control, and biodiversity enhancement in oil-impacted regions.
-                <br><br>
-                Our projects involve scientific soil analysis, hydrocarbon contamination assessment, controlled planting techniques, and long-term ecosystem monitoring. By restoring mangrove forests, we help mitigate carbon emissions, strengthen coastal resilience, and support the United Nations Sustainable Development Goals (SDGs) for climate action and marine ecosystem preservation.
-            </p>
-        </div>
-        <div class="image-content">
-            <img src="axflo/axflo12.jpg" alt="Mangrove Planting and Restoration" />
-        </div>
-    </div>
-</section>
-
-<section class="section-layout service-section" data-aos="fade-up">
-    <div class="grid-container">
-        <div class="text-content">
-            <h2>Fence Boom Installation at NAOC Loading Facility</h2>
-            <p>
-                To safeguard oil loading terminals and marine logistics hubs, Axflo specializes in the design, deployment, and maintenance of fence booms— a critical first line of defense against oil spills in high-risk offshore environments.
-                <br><br>
-                Our heavy-duty containment barriers are engineered for long-term resilience, effectively preventing the spread of hydrocarbons in docking areas, transfer stations, and loading terminals. We utilize high-strength, UV-resistant, and chemical-resistant materials, ensuring that fence booms withstand harsh weather, tidal currents, and prolonged exposure to oil contaminants.
-            </p>
-        </div>
-        <div class="image-content">
-            <img src="fence_boom.jpg" alt="Fence Boom Installation" />
-        </div>
-    </div>
-</section>
-
-<section class="section-layout service-section reverse" data-aos="fade-up">
-    <div class="grid-container">
-        <div class="text-content">
-            <h2>Spill Containment and Recovery Activities</h2>
-            <p>
-                Axflo is an industry leader in spill containment and oil recovery operations, employing advanced containment strategies and hydrocarbon recovery techniques to mitigate the environmental impact of industrial spills.
-                <br><br>
-                Our 24/7 emergency response teams deploy containment booms, sorbents, and high-speed skimmers to isolate and recover oil from marine, estuarine, and inland spill zones. We incorporate real-time monitoring, aerial surveillance, and predictive analytics to optimize spill response efficiency and minimize contamination spread.
-                <br><br>
-                In line with ISO 9001:2015 and ISO 14001:2015 standards, Axflo ensures that all containment and recovery operations adhere to global best practices in oil spill management and environmental restoration.
-            </p>
-        </div>
-        <div class="image-content">
-            <img src="axflo/axflo26.jpg" alt="Spill Containment and Recovery" />
-        </div>
-    </div>
-</section>
-
-
-<!-- Footer Call to Action -->
-<div class="cta-button">
-    <a href="#contact" class="btn">Contact Us for More Information</a>
-</div>
-
-
-
-
-
-
+  
 
 
 
@@ -214,6 +558,9 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0-beta3/js/all.min.js"
   
   ></script>
+
+
+  <script src="main.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
       <script>
         AOS.init({
@@ -222,55 +569,216 @@
         });
   
   
+ // Navigation background change on scroll with link color changes
+window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    const navLinks = document.querySelectorAll('nav a'); // Select all links in nav
+    
+    if (window.scrollY > 100) {
+        // Scrolled state - solid background with black links
+        nav.style.background = 'rgba(250, 250, 250, 0.95)';
+        nav.style.borderBottom = '1px solid rgba(214, 160, 25, 0.2)';
         
-  function toggleNav() {
-              const nav = document.querySelector('.nav');
-              const toggleBtn = document.querySelector('.toggle-btn');
-              nav.classList.toggle('active');
-              toggleBtn.classList.toggle('active');
-              // Toggle overlay visibility
-              const overlay = document.querySelector('.overlay');
-              overlay.classList.toggle('active');
-          }
+        // Make links black when scrolled
+        navLinks.forEach(link => {
+            link.style.color = '#000000';
+        });
+    } else {
+        // Top of page - transparent background with white links
+        nav.style.background = 'rgba(250, 250, 250, 0.1)';
+        nav.style.borderBottom = '1px solid rgba(214, 160, 25, 0.1)';
+        
+        // Make links white when at top
+        navLinks.forEach(link => {
+            link.style.color = '#ffffff';
+        });
+    }
+});
   
-          // Function to handle navbar style on scroll
-          function handleScroll() {
-              const header = document.querySelector('.header');
-              const navLinks = document.querySelectorAll('.nav__links a');
-              const navAction = document.querySelector('.nav__action a');
-  
-              if (window.scrollY > 50) {
-                  header.classList.add('scrolled');
-                  // Change link colors to black
-                  navLinks.forEach(link => {
-                      link.style.color = '#000';
-                  });
-                  // Change action button colors
-                  navAction.style.color = '#000';
-                  navAction.style.borderColor = '#FFD700'; // Match gold/yellow
-              } else {
-                  header.classList.remove('scrolled');
-                  // Revert link colors to white
-                  navLinks.forEach(link => {
-                      link.style.color = '#fff';
-                  });
-                  // Revert action button colors
-                  navAction.style.color = '#ffcc00'; // Original gold/yellow
-                  navAction.style.borderColor = '#ffcc00';
-              }
-          }
-  
-          // Event listeners
-          window.addEventListener('scroll', handleScroll);
-   function toggleNav() {
-      const nav = document.querySelector('.nav');
-      const toggleBtn = document.querySelector('.toggle-btn');
-      const overlay = document.querySelector('.overlay');
-      const isActive = nav.classList.toggle('active');
-      toggleBtn.classList.toggle('active');
-      overlay.classList.toggle('active');
-      toggleBtn.setAttribute('aria-expanded', isActive);
-  }
-  
+
+
+   // Enhanced Back to Top functionality with progress indicator
+        const backToTopBtn = document.getElementById('backToTop');
+        const progressRing = document.querySelector('.progress-ring-circle');
+        const circumference = 2 * Math.PI * 28; // radius = 28
+
+        progressRing.style.strokeDasharray = circumference;
+        progressRing.style.strokeDashoffset = circumference;
+
+        function updateScrollProgress() {
+            const scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollCurrent = window.pageYOffset;
+            const scrollPercentage = scrollCurrent / scrollTotal;
+            
+            const offset = circumference - (scrollPercentage * circumference);
+            progressRing.style.strokeDashoffset = offset;
+
+            // Show/hide button based on scroll position
+            if (scrollCurrent > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Throttled scroll listener for better performance
+        let ticking = false;
+        function handleScroll() {
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    updateScrollProgress();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        
+        // Newsletter form handling
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            if (email) {
+                // Add your newsletter subscription logic here
+                alert('Thank you for subscribing!');
+                this.querySelector('input[type="email"]').value = '';
+            }
+        });
+
+ const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Advanced scroll animations for service sections
+        const serviceObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.style.opacity = '1';
+                    
+                    // Animate stats counters
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    statNumbers.forEach(stat => {
+                        const finalValue = stat.textContent;
+                        const isNumber = !isNaN(parseFloat(finalValue));
+                        
+                        if (isNumber) {
+                            const numValue = parseFloat(finalValue);
+                            let current = 0;
+                            const increment = numValue / 50;
+                            const timer = setInterval(() => {
+                                current += increment;
+                                if (current >= numValue) {
+                                    current = numValue;
+                                    clearInterval(timer);
+                                }
+                                stat.textContent = Math.floor(current) + (finalValue.includes('%') ? '%' : '');
+                            }, 30);
+                        }
+                    });
+                }
+            });
+        }, {
+            threshold: 0.3
+        });
+
+        document.querySelectorAll('.service-section').forEach(section => {
+            serviceObserver.observe(section);
+        });
+
+        // Advanced hover effects for service images
+        document.querySelectorAll('.service-image').forEach(image => {
+            image.addEventListener('mouseenter', () => {
+                image.style.transform = 'translateY(-15px) rotateY(5deg)';
+            });
+            
+            image.addEventListener('mouseleave', () => {
+                image.style.transform = 'translateY(0) rotateY(0deg)';
+            });
+        });
+
+        // Smooth scrolling for CTA button
+        document.querySelector('.cta-button').addEventListener('click', (e) => {
+            e.preventDefault();
+            // Add smooth scroll behavior if contact section exists
+            const contactSection = document.querySelector('#contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+
+        // Advanced parallax effect for floating elements
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.floating-element');
+            
+            parallaxElements.forEach((element, index) => {
+                const speed = 0.5 + (index * 0.1);
+                const yPos = -(scrolled * speed);
+                element.style.transform = `translate3d(0, ${yPos}px, 0)`;
+            });
+        });
+
+        // Enhanced button interactions
+        document.querySelectorAll('.cta-button, .service-badge').forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-3px) scale(1.05)';
+            });
+            
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+   
+        // Advanced loading animation
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '1';
+        //    body.classList.add('loaded');
+        //     document.querySelector('.loading-animation').style.display = 'none';
+        });
+
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add stagger delay to service sections
+            document.querySelectorAll('.service-section').forEach((section, index) => {
+                section.style.transitionDelay = `${index * 0.2}s`;
+            });
+
+            // Initialize floating animation with random positions
+            document.querySelectorAll('.floating-element').forEach((element, index) => {
+                const randomX = Math.random() * 100;
+                const randomY = Math.random() * 100;
+                element.style.left = `${randomX}%`;
+                element.style.top = `${randomY}%`;
+                element.style.animationDelay = `${index * 2}s`;
+            });
+        });
+
       </script>
 </body>
