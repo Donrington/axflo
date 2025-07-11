@@ -60,18 +60,92 @@
                 <!-- Dark logo for white background -->
                 <img src="logo/AOGLogoBlack2.png" alt="Dark Logo" class="logo-dark">
             </div>
-            <ul class="nav__links">
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="#news">News</a></li>
+      <ul class="nav__links">
+                <li><a href="#home">Home</a></li>
+                
+                <!-- About Us Dropdown -->
+                <li class="dropdown">
+                    <a href="#about">
+                        About Us
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#board-directors">Board of Directors</a>
+                        <a href="#our-company">Our Company</a>
+                        <a href="#hse">Health Safety and Environment</a>
+                        <a href="#our-people">Our People</a>
+                        <a href="#milestones">Major Milestones</a>
+                    </div>
+                </li>
+                
+                <!-- Services Mega Dropdown -->
+                <li class="dropdown mega-dropdown">
+                    <a href="#services">
+                        Services
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <div class="mega-content">
+                            <div class="mega-section">
+                                <h4>EPC Contracting</h4>
+                                <ul>
+                                    <li><a href="#engineering">Engineering & Consultancy</a></li>
+                                    <li><a href="#procurement">Procurement & Logistics</a></li>
+                                    <li><a href="#construction">Construction Services</a></li>
+                                    <li><a href="#installation">Installation Services</a></li>
+                                    <li><a href="#testing">Testing & Commissioning</a></li>
+                                    <li><a href="#project-mgmt">Project Management</a></li>
+                                    <li><a href="#plant-operation">Plant Operation & Facility Management</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-section">
+                                <h4>Offshore & Marine</h4>
+                                <ul>
+                                    <li><a href="#offshore">Offshore Services</a></li>
+                                    <li><a href="#marine">Marine Support</a></li>
+                                    <li><a href="#accommodation">Offshore Accommodation</a></li>
+                                    <li><a href="#equipment-hire">Equipment Hire</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-section">
+                                <h4>Environmental Services</h4>
+                                <ul>
+                                    <li><a href="#environmental-tech">Environmental Technologies</a></li>
+                                    <li><a href="#water-treatment">Water & Wastewater Treatment</a></li>
+                                    <li><a href="#waste-recycling">Waste and Recycling</a></li>
+                                    <li><a href="#renewable">Renewable Energy</a></li>
+                                    <li><a href="#oil-spill">Oil Spill Response</a></li>
+                                    <li><a href="#preparedness">Preparedness</a></li>
+                                    <li><a href="#incident-mgmt">Incident Management</a></li>
+                                    <li><a href="#training">Training</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li><a href="#projects">Projects</a></li>
+                
+                <!-- QHSE Dropdown -->
+                <li class="dropdown">
+                    <a href="#qhse">
+                        QHSE
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#policies">Policies</a>
+                        <a href="#certifications">Certifications</a>
+                        <a href="#safety-standards">Safety Standards</a>
+                    </div>
+                </li>
+                
                 <li><a href="#careers">Careers</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#media">Media Centre</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            
             <div class="nav__action">
-                <a href="tel:+123456789">Call Us</a>
+                <a href="tel:+234-84-843474">Call Us</a>
             </div>
         </nav>
     </header>
@@ -88,24 +162,63 @@
         <div class="mobile-nav__header">
             <img src="logo/AOGLogoWhite2.png" alt="Axflo logo">
         </div>
-        <ul class="mobile-nav__links">
-            <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="about.html"><i class="fas fa-users"></i>About Us</a></li>
-            <li><a href="#news"><i class="fas fa-newspaper"></i>News</a></li>
+     <ul class="mobile-nav__links">
+            <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
+            
+            <li>
+                <a href="#about" onclick="toggleMobileDropdown(event, 'about-dropdown')">
+                    <i class="fas fa-users"></i>About Us
+                    <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
+                </a>
+                <div class="mobile-dropdown" id="about-dropdown">
+                    <a href="#board-directors">Board of Directors</a>
+                    <a href="#our-company">Our Company</a>
+                    <a href="#hse">Health Safety and Environment</a>
+                    <a href="#our-people">Our People</a>
+                    <a href="#milestones">Major Milestones</a>
+                </div>
+            </li>
+            
+            <li>
+                <a href="#services" onclick="toggleMobileDropdown(event, 'services-dropdown')">
+                    <i class="fas fa-cogs"></i>Services
+                    <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
+                </a>
+                <div class="mobile-dropdown" id="services-dropdown">
+                    <a href="#epc">EPC Contracting</a>
+                    <a href="#offshore">Offshore Services</a>
+                    <a href="#environmental">Environmental Technologies</a>
+                    <a href="#water-treatment">Water Treatment</a>
+                    <a href="#oil-spill">Oil Spill Response</a>
+                    <a href="#equipment-hire">Equipment Hire</a>
+                </div>
+            </li>
+            
+            <li><a href="#projects"><i class="fas fa-project-diagram"></i>Projects</a></li>
+            
+            <li>
+                <a href="#qhse" onclick="toggleMobileDropdown(event, 'qhse-dropdown')">
+                    <i class="fas fa-shield-alt"></i>QHSE
+                    <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
+                </a>
+                <div class="mobile-dropdown" id="qhse-dropdown">
+                    <a href="#policies">Policies</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#safety-standards">Safety Standards</a>
+                </div>
+            </li>
+            
             <li><a href="#careers"><i class="fas fa-briefcase"></i>Careers</a></li>
-            <li><a href="#achievements"><i class="fas fa-trophy"></i>Achievements</a></li>
-            <li><a href="services.html"><i class="fas fa-cogs"></i>Services</a></li>
-            <li><a href="#certifications"><i class="fas fa-certificate"></i>Certifications</a></li>
+            <li><a href="#media"><i class="fas fa-newspaper"></i>Media Centre</a></li>
             <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
         </ul>
         <div class="mobile-nav__action">
-            <a href="tel:+123456789">
+            <a href="tel:+234-84-843474">
                 <i class="fas fa-phone"></i>
                 Call Us Now
             </a>
         </div>
     </div>
-
     <!-- Overlay -->
     <div class="overlay" onclick="toggleNav()"></div>
 

@@ -1,5 +1,4 @@
-
-  function toggleNav() {
+ function toggleNav() {
             const mobileNav = document.querySelector('.mobile-nav');
             const toggleBtn = document.querySelector('.toggle-btn');
             const overlay = document.querySelector('.overlay');
@@ -32,13 +31,21 @@
             }
         }
 
-        // Enhanced Scroll Handler with Smooth Transitions
+        function toggleMobileDropdown(event, dropdownId) {
+            event.preventDefault();
+            const dropdown = document.getElementById(dropdownId);
+            const chevron = event.currentTarget.querySelector('.fa-chevron-down');
+            
+            dropdown.classList.toggle('active');
+            chevron.style.transform = dropdown.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
+        }
+
+        // Enhanced Scroll Handler
         function handleScroll() {
             const header = document.querySelector('.header');
             const scrollThreshold = 50;
             const currentScrollY = window.scrollY;
             
-            // Debounce scroll events for better performance
             if (window.scrollTimeout) {
                 clearTimeout(window.scrollTimeout);
             }
@@ -47,28 +54,10 @@
                 if (currentScrollY > scrollThreshold) {
                     if (!header.classList.contains('scrolled')) {
                         header.classList.add('scrolled');
-                        
-                        // Trigger logo transition
-                        const lightLogo = document.querySelector('.logo-light');
-                        const darkLogo = document.querySelector('.logo-dark');
-                        
-                        if (lightLogo && darkLogo) {
-                            lightLogo.style.opacity = '0';
-                            darkLogo.style.opacity = '1';
-                        }
                     }
                 } else {
                     if (header.classList.contains('scrolled')) {
                         header.classList.remove('scrolled');
-                        
-                        // Revert logo transition
-                        const lightLogo = document.querySelector('.logo-light');
-                        const darkLogo = document.querySelector('.logo-dark');
-                        
-                        if (lightLogo && darkLogo) {
-                            lightLogo.style.opacity = '1';
-                            darkLogo.style.opacity = '0';
-                        }
                     }
                 }
             }, 10);
@@ -99,12 +88,6 @@
                         if (document.querySelector('.mobile-nav').classList.contains('active')) {
                             toggleNav();
                         }
-                        
-                        // Add active state to clicked link
-                        document.querySelectorAll('.nav__links a, .mobile-nav__links a').forEach(l => {
-                            l.classList.remove('active');
-                        });
-                        link.classList.add('active');
                     }
                 });
             });
@@ -129,6 +112,41 @@
                 toggleNav();
             }
         }
+
+        // Initialize all functionality when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add scroll event listener with throttling
+            let ticking = false;
+            window.addEventListener('scroll', () => {
+                if (!ticking) {
+                    requestAnimationFrame(() => {
+                        handleScroll();
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+            
+            // Initialize other functionality
+            initSmoothScroll();
+            
+            // Add event listeners
+            document.addEventListener('click', handleOutsideClick);
+            window.addEventListener('resize', handleResize);
+            
+            // Add keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    const mobileNav = document.querySelector('.mobile-nav');
+                    if (mobileNav.classList.contains('active')) {
+                        toggleNav();
+                    }
+                }
+            });
+            
+            // Initial call to set correct state
+            handleScroll();
+        });
 
         // Intersection Observer for Active Navigation States
         function initActiveNavigation() {
