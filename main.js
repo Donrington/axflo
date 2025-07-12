@@ -64,34 +64,34 @@
         }
 
         // Smooth Scroll for Anchor Links
-        function initSmoothScroll() {
-            const links = document.querySelectorAll('a[href^="#"]');
+        // function initSmoothScroll() {
+        //     const links = document.querySelectorAll('a[href^="#"]');
             
-            links.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault();
+        //     links.forEach(link => {
+        //         link.addEventListener('click', (e) => {
+        //             e.preventDefault();
                     
-                    const targetId = link.getAttribute('href');
-                    if (targetId === '#') return;
+        //             const targetId = link.getAttribute('href');
+        //             if (targetId === '#') return;
                     
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        const headerHeight = document.querySelector('.header').offsetHeight;
-                        const offsetTop = targetElement.offsetTop - headerHeight - 20;
+        //             const targetElement = document.querySelector(targetId);
+        //             if (targetElement) {
+        //                 const headerHeight = document.querySelector('.header').offsetHeight;
+        //                 const offsetTop = targetElement.offsetTop - headerHeight - 20;
                         
-                        window.scrollTo({
-                            top: offsetTop,
-                            behavior: 'smooth'
-                        });
+        //                 window.scrollTo({
+        //                     top: offsetTop,
+        //                     behavior: 'smooth'
+        //                 });
                         
-                        // Close mobile nav if open
-                        if (document.querySelector('.mobile-nav').classList.contains('active')) {
-                            toggleNav();
-                        }
-                    }
-                });
-            });
-        }
+        //                 // Close mobile nav if open
+        //                 if (document.querySelector('.mobile-nav').classList.contains('active')) {
+        //                     toggleNav();
+        //                 }
+        //             }
+        //         });
+        //     });
+        // }
 
         // Close mobile nav when clicking outside
         function handleOutsideClick(e) {
