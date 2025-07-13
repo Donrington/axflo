@@ -1,4 +1,4 @@
- function toggleNav() {
+   function toggleNav() {
             const mobileNav = document.querySelector('.mobile-nav');
             const toggleBtn = document.querySelector('.toggle-btn');
             const overlay = document.querySelector('.overlay');
@@ -33,11 +33,43 @@
 
         function toggleMobileDropdown(event, dropdownId) {
             event.preventDefault();
+            event.stopPropagation();
+            
             const dropdown = document.getElementById(dropdownId);
             const chevron = event.currentTarget.querySelector('.fa-chevron-down');
+            const isActive = dropdown.classList.contains('active');
             
+            // Close all other dropdowns first
+            document.querySelectorAll('.mobile-dropdown.active').forEach(otherDropdown => {
+                if (otherDropdown.id !== dropdownId) {
+                    otherDropdown.classList.remove('active');
+                    const otherChevron = document.querySelector(`[onclick*="${otherDropdown.id}"] .fa-chevron-down`);
+                    if (otherChevron) {
+                        otherChevron.style.transform = 'rotate(0deg)';
+                    }
+                }
+            });
+            
+            // Toggle current dropdown
             dropdown.classList.toggle('active');
-            chevron.style.transform = dropdown.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
+            
+            // Animate chevron
+            if (chevron) {
+                chevron.style.transform = dropdown.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
+            }
+            
+            // Add staggered animation for dropdown items
+            if (!isActive) {
+                const dropdownLinks = dropdown.querySelectorAll('a');
+                dropdownLinks.forEach((link, index) => {
+                    link.style.opacity = '0';
+                    link.style.transform = 'translateX(-20px)';
+                    setTimeout(() => {
+                        link.style.opacity = '1';
+                        link.style.transform = 'translateX(0)';
+                    }, index * 50 + 100);
+                });
+            }
         }
 
         // Enhanced Scroll Handler
@@ -65,17 +97,16 @@
 
         // Smooth Scroll for Anchor Links
         // function initSmoothScroll() {
-        //     const links = document.querySelectorAll('a[href^="#"]');
+        //     const links = document.querySelectorAll('a[href^="#"]:not([onclick])');
             
         //     links.forEach(link => {
         //         link.addEventListener('click', (e) => {
-        //             e.preventDefault();
-                    
         //             const targetId = link.getAttribute('href');
-        //             if (targetId === '#') return;
+        //             if (targetId === '#' || targetId.length <= 1) return;
                     
         //             const targetElement = document.querySelector(targetId);
         //             if (targetElement) {
+        //                 e.preventDefault();
         //                 const headerHeight = document.querySelector('.header').offsetHeight;
         //                 const offsetTop = targetElement.offsetTop - headerHeight - 20;
                         
@@ -148,77 +179,4 @@
             handleScroll();
         });
 
-        // Intersection Observer for Active Navigation States
-        function initActiveNavigation() {
-            const sections = document.querySelectorAll('section, [id]');
-            const navLinks = document.querySelectorAll('.nav__links a, .mobile-nav__links a');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const currentId = entry.target.getAttribute('id');
-                        
-                        navLinks.forEach(link => {
-                            link.classList.remove('active');
-                            if (link.getAttribute('href') === `#${currentId}`) {
-                                link.classList.add('active');
-                            }
-                        });
-                    }
-                });
-            }, {
-                threshold: 0.6,
-                rootMargin: '-100px 0px -100px 0px'
-            });
-            
-            sections.forEach(section => {
-                if (section.id) {
-                    observer.observe(section);
-                }
-            });
-        }
 
-        // Initialize all functionality when DOM is loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            // Add scroll event listener with throttling
-            let ticking = false;
-            window.addEventListener('scroll', () => {
-                if (!ticking) {
-                    requestAnimationFrame(() => {
-                        handleScroll();
-                        ticking = false;
-                    });
-                    ticking = true;
-                }
-            });
-            
-            // Initialize other functionality
-            initSmoothScroll();
-            initActiveNavigation();
-            
-            // Add event listeners
-            document.addEventListener('click', handleOutsideClick);
-            window.addEventListener('resize', handleResize);
-            
-            // Add keyboard navigation
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') {
-                    const mobileNav = document.querySelector('.mobile-nav');
-                    if (mobileNav.classList.contains('active')) {
-                        toggleNav();
-                    }
-                }
-            });
-            
-            // Initial call to set correct state
-            handleScroll();
-        });
-
-        // Add loading animation
-        window.addEventListener('load', () => {
-            document.body.style.opacity = '1';
-            document.body.style.transition = 'opacity 0.5s ease-in-out';
-        });
-        
-
-        
