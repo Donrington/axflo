@@ -1298,6 +1298,14 @@ html {
     overflow: hidden;
 }
 
+.memberimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: var(--transition);
+}
+
 .image-placeholder {
     width: 100%;
     height: 100%;
@@ -1602,6 +1610,30 @@ html {
     font-size: 3rem;
     color: var(--primary-gold);
     margin-bottom: 1rem;
+}
+
+.personnel-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border: 3px solid var(--primary-gold);
+    box-shadow: 0 4px 15px rgba(214, 160, 25, 0.3);
+    transition: var(--transition);
+}
+
+.personnelimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: var(--transition);
+}
+
+.personnel-card:hover .personnel-image {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(214, 160, 25, 0.5);
 }
 
 .personnel-header h4 {
